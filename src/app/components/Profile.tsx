@@ -1,9 +1,8 @@
-import { Irish_Grover } from 'next/font/google'
-import { Mohave } from 'next/font/google'
 import 'animate.css';
-import Image from 'next/image'
-import profilePIC from 'public/images/Foto_perfil.svg'
 import { useTranslations } from 'next-intl';
+import { Irish_Grover } from 'next/font/google';
+import Image from 'next/image';
+import profilePIC from 'public/images/Foto_perfil.svg';
 
 const irish = Irish_Grover({
   subsets: ['latin'],
@@ -12,7 +11,7 @@ const irish = Irish_Grover({
 
 function Profile() {
 
-  // function Translate  
+  // function TRANSLATE
   const t = useTranslations('ProfilePage');
 
 

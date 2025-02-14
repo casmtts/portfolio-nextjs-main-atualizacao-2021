@@ -1,18 +1,17 @@
 import Image from 'next/image';
 
-import frontEndIcon from 'public/images/front-end.png';
-import backEndIcon from 'public/images/back-end.png';
-import ecommerceIcon from 'public/images/ecommerce.png';
-import sistemasIcon from 'public/images/sistemas.png';
 import appIcon from 'public/images/app.png';
-import websiteIcon from 'public/images/web-site.png';
+import backEndIcon from 'public/images/back-end.png';
+import frontEndIcon from 'public/images/front-end.png';
 import landingpageIcon from 'public/images/landing-page.png';
-import uiuxIcon from 'public/images/ui-ux.png';
+import cybersecurityIcon from 'public/images/lock-protection-privacy-cyber-security-safety-svgrepo-com.svg';
 import seoIcon from 'public/images/seo.png';
-import cybersecurityIcon from 'public/images/lock-protection-privacy-cyber-security-safety-svgrepo-com.svg'
+import sistemasIcon from 'public/images/sistemas.png';
+import uiuxIcon from 'public/images/ui-ux.png';
+import websiteIcon from 'public/images/web-site.png';
 
-import { Mohave } from 'next/font/google';
 import { useTranslations } from 'next-intl';
+import { Mohave } from 'next/font/google';
 
 const mohave = Mohave({
   subsets: ['latin'],

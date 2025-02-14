@@ -1,14 +1,13 @@
 'use client'
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 
 //Images
-import euaFlagIcon from 'public/images/eua_flag.svg';
 import brFlagIcon from 'public/images/brasilflag.svg';
-import portfolioSVG from 'public/images/portfolio-svgrepo-com.svg';
 import contactIcon from 'public/images/contact-Icon.svg';
-import cvIcon from 'public/images/curriculum-vitae-portfolio-svgrepo-com.svg';
+import euaFlagIcon from 'public/images/eua_flag.svg';
+import portfolioSVG from 'public/images/portfolio-svgrepo-com.svg';
 import DropdownCV from './DropdownCV';
 
 function Navbar() {
@@ -120,8 +119,8 @@ function Navbar() {
                     <DropdownCV />
 
                     <div className="flex flex-row cursor-pointer ">
-                        <Link href='/en'><Image className='mx-2 hover:scale-110' src={euaFlagIcon} alt="euaFlagIcon" /></Link>
-                        <Link href='/ptbr' ><Image className='mx-2 hover:scale-110' src={brFlagIcon} alt="brFlagIcon" /></Link>
+                        <Link href='/en'><Image className='mx-2 hover:scale-110' src={euaFlagIcon} alt="euaFlagIcon" priority={true} /></Link>
+                        <Link href='/ptbr' ><Image className='mx-2 hover:scale-110' src={brFlagIcon} alt="brFlagIcon" priority={true} /></Link>
                     </div>
                 </div>
             </header>

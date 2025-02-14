@@ -14,7 +14,7 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
 
-  // function Translate  
+  // function Translate
   const t = useTranslations('Navbar');
 
   return (

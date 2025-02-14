@@ -11,15 +11,15 @@ import Skills from '../components/Skills'
 
 function Home() {
   return (
-   <>
-    <Navbar />
-    <Profile />
-    <Services />
-    <Skills />
-    <Portfolio />
-    <Contact />
-    <Footer />
-   </>
+    <>
+      <Navbar />
+      <Profile />
+      <Services />
+      <Skills />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </>
 
   )
 }
