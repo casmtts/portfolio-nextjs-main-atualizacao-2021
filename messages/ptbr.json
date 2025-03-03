@@ -2,7 +2,6 @@
   "ProfilePage": {
     "position": "Desenvolvedor de Software",
     "description": "Crio e desenvolvo design de produtos digitais como Sistemas, Lojas Virtuais, Landing Pages, Sites e Aplicativos. Atualmente atuo criando produtos baseado em human-centered."
-  
   },
   "Navbar": {
     "profileTitle": "Perfil",
@@ -10,7 +9,6 @@
     "skillsTitle": "Habilidades",
     "portfolioTitle": "Portfolio",
     "contactTitle": "Contato"
-
   },
   "ServicesPage": {
     "title": "Serviços",
@@ -32,7 +30,6 @@
     "seoDescription": "Posicionando sites por meio de determinadas palavras-chave na primeira página dos mecanismos de pesquisa (Google, Bing, Yahoo, etc.), aplicando estratégias complexas e viáveis para a adequação aos algoritmos dos motores de busca.",
     "secInfoTitle": "ESPECIALISTA EM CIBERSEGURANÇA",
     "secInfoDescription": "Atuando como Analista de Segurança Ofensiva (Pentest) e Defensiva (Blue Team). com Testes de intrusão, análise de vulnerabilidades, proteção de dados confidenciais, implementação de plataformas de segurança centralizadas para controle, monitorização e neutralização de ameaças na rede, endpoints e distração de eventuais atacantes."
-
   },
   "skillsPage": {
     "title": "Habilidades",
@@ -92,20 +89,16 @@
     "mavenSubtitle": "Apache Maven, ou Maven, é uma ferramenta de automação de compilação utilizada primariamente em projetos Java. Ela é similar à ferramenta Ant, mas é baseada em conceitos e trabalhos diferentes em um modo diferente.",
     "swaggerSubtitle": "Swagger é um conjunto de ferramentas para desenvolvedores de API da SmartBear Software e uma especificação anterior na qual a especificação OpenAPI se baseia. O projeto Swagger API foi criado em 2011 por Tony Tam, cofundador técnico do site de dicionários Wordnik.",
     "pythonSubtitle": "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991."
-
   },
   "NotFoundPage": {
     "title": "Página não encontrada",
     "description": "Oops! Parece que você se deparou com uma página que não existe. Não se preocupe, nossa mágica de internacionalização ainda está trabalhando duro em outras partes do aplicativo. Sinta-se livre para navegar de volta para explorar mais!"
-  
   },
   "Contact": {
-    "getInContact": "Entre em contato:"  
-
+    "getInContact": "Entre em contato:"
   },
   "Footer": {
     "copyright": "© CSM SOLUÇÕES TECNOLÓGICAS E DESENVOLVIMENTO. Todos Direitos Reservados.",
     "paymentsAccepted": "Aceito Pagamento em:"
-
   }
 }

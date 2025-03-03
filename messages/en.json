@@ -2,7 +2,6 @@
   "ProfilePage": {
     "position": "Software Engineer",
     "description": "I create and develop design of digital products such as Systems, Virtual Stores, Landing Pages, Websites and Applications. Currently I work creating products based on human-centered."
-
   },
   "Navbar": {
     "profileTitle": "Profile",
@@ -10,7 +9,6 @@
     "skillsTitle": "Skills",
     "portfolioTitle": "Portfolio",
     "contactTitle": "Contact"
-
   },
   "ServicesPage": {
     "title": "Services",
@@ -32,7 +30,6 @@
     "seoDescription": "Positioning websites through certain keywords on the first page of search engines (Google, Bing, Yahoo, etc.), applying complex and feasible strategies to adapt to search engine algorithms.",
     "secInfoTitle": "CYBERSECURITY SPECIALIST",
     "secInfoDescription": "Acting as Offensive (Pentest) and Defensive (Blue Team) Security Analyst. with penetration testing, vulnerability analysis, protection of confidential data, implementation of centralized security platforms for control, monitoring and neutralization of threats in the network, endpoints and distraction of possible attackers."
-
   },
   "skillsPage": {
     "title": "Skills",
@@ -92,19 +89,16 @@
     "mavenSubtitle": "Apache Maven, or Maven, is a build automation tool used primarily in Java projects. It's similar to the Ant tool, but it's based on different concepts and work in a different way.",
     "swaggerSubtitle": "Swagger is a set of tools for API developers from SmartBear Software and an earlier specification on which the OpenAPI specification is based. The Swagger API project was created in 2011 by Tony Tam, technical co-founder of the dictionary website Wordnik.",
     "pythonSubtitle": "Python is a high-level, script-interpreted, imperative, object-oriented, functional, dynamically typed, and strong programming language. It was launched by Guido van Rossum in 1991."
-
   },
   "NotFoundPage": {
     "title": "Page Not Found",
     "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
-  
   },
   "Contact": {
-    "getInContact": "Contact Us:"  
+    "getInContact": "Contact Us:"
   },
   "Footer": {
     "copyright": "© CSM SOLUÇÕES TECNOLÓGICAS E DESENVOLVIMENTO. All rights reserved.",
     "paymentsAccepted": "I accept payment at:"
-  
   }
 }
