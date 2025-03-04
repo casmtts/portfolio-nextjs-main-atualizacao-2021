@@ -1,13 +1,18 @@
-'use client';
+// pages/not-found.tsx
+import Link from 'next/link';
 
-export default function NotFound() {
+const NotFound = () => {
   return (
-    <html>
-      <body className='text-center'>
-        <h1 className='mt-10 font-semibold'>Page not found!</h1>
-        <h1 className='mt-10 font-semibold'>Página não encontrada!</h1>
-
-      </body>
-    </html>
+    <div>
+      <h1>404 - Página Não Encontrada</h1>
+      <p>
+        Desculpe, mas a página que você está procurando não existe. Volte para a{' '}
+        <Link href="/">
+          <a>Página Inicial</a>
+        </Link>.
+      </p>
+    </div>
   );
-}
+};
+
+export default NotFound;

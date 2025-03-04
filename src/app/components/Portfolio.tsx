@@ -1,26 +1,24 @@
-"use client"
-import { Dialog, Transition } from '@headlessui/react'
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+'use client'
+
 import Image from 'next/image';
 
-
-import siteFreteRapidoImage from 'public/images/SITE_freterapido.png';
-import siteFreteRapidoImageOriginal from 'public/images/SITE_freterapidoOriginal.png';
-import giroCertoImage from 'public/images/CORTE_FINAL_GIRO_CERTO.png';
-import cryptoAppImage from 'public/images/CryptoApp Wallet.png';
-import cryptoAppImageOriginal from 'public/images/CryptoApp WalletOriginal.png';
-import AppGestaoImage from 'public/images/Aplicativo_de_gestao.png';
-import OdontoCareImage from 'public/images/tela_sistema.png';
-import ArtworkFiguresImage from 'public/images/ECOMMERCE_Action-Figures.png';
-import ArtworkFiguresImageOriginal from 'public/images/ECOMMERCE_Action-FiguresOriginal.png';
-import EcommerceVegaImage from 'public/images/ECOMMERCE_VEGA-SHOP.png';
-import EcommerceVegaImageOriginal from 'public/images/ECOMMERCE_VEGA-SHOP_Original.png';
-import MultinvestImage from 'public/images/LP-MultiInvest.png';
-import lpDalacoinImage from 'public/images/lp_DalaCoin.png';
-import logisticaImage from 'public/images/logistica.png';
-import logisticaImageOriginal from 'public/images/LP_CARGO LOGISTICA.png';
 import Link from 'next/link';
 import React from 'react';
+import AppGestaoImage from '../../../public/images/Aplicativo_de_gestao.png';
+import giroCertoImage from '../../../public/images/CORTE_FINAL_GIRO_CERTO.png';
+import cryptoAppImage from '../../../public/images/CryptoApp Wallet.png';
+import cryptoAppImageOriginal from '../../../public/images/CryptoApp WalletOriginal.png';
+import ArtworkFiguresImage from '../../../public/images/ECOMMERCE_Action-Figures.png';
+import ArtworkFiguresImageOriginal from '../../../public/images/ECOMMERCE_Action-FiguresOriginal.png';
+import EcommerceVegaImage from '../../../public/images/ECOMMERCE_VEGA-SHOP.png';
+import EcommerceVegaImageOriginal from '../../../public/images/ECOMMERCE_VEGA-SHOP_Original.png';
+import logisticaImage from '../../../public/images/logistica.png';
+import MultinvestImage from '../../../public/images/LP-MultiInvest.png';
+import logisticaImageOriginal from '../../../public/images/LP_CARGO LOGISTICA.png';
+import lpDalacoinImage from '../../../public/images/lp_DalaCoin.png';
+import siteFreteRapidoImage from '../../../public/images/SITE_freterapido.png';
+import siteFreteRapidoImageOriginal from '../../../public/images/SITE_freterapidoOriginal.png';
+import OdontoCareImage from '../../../public/images/tela_sistema.png';
 
 
 function Portfolio() {

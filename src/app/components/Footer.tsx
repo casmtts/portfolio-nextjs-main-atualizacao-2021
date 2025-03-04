@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import btcIcon from 'public/images/btcIcon.png';
+import btcIcon from '../../../public/images/btcIcon.png';
 
 export default function Footer() {
 

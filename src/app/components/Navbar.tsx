@@ -1,13 +1,14 @@
 'use client'
+
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
 //Images
-import brFlagIcon from 'public/images/brasilflag.svg';
-import contactIcon from 'public/images/contact-Icon.svg';
-import euaFlagIcon from 'public/images/eua_flag.svg';
-import portfolioSVG from 'public/images/portfolio-svgrepo-com.svg';
+import brFlagIcon from '../../../public/images/brasilflag.svg';
+import contactIcon from '../../../public/images/contact-Icon.svg';
+import euaFlagIcon from '../../../public/images/eua_flag.svg';
+import portfolioSVG from '../../../public/images/portfolio-svgrepo-com.svg';
 import DropdownCV from './DropdownCV';
 
 function Navbar() {

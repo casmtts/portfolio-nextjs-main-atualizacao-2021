@@ -1,11 +1,13 @@
+'use client'
+
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import brFlagIcon from 'public/images/brasilflag.svg';
-import cvIcon from 'public/images/curriculum-vitae-portfolio-svgrepo-com.svg';
-import euaFlagIcon from 'public/images/eua_flag.svg';
+import brFlagIcon from '../../../public/images/brasilflag.svg';
+import cvIcon from '../../../public/images/curriculum-vitae-portfolio-svgrepo-com.svg';
+import euaFlagIcon from '../../../public/images/eua_flag.svg';
 
 
 function classNames(...classes: string[]) {

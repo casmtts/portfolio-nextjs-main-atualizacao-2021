@@ -1,8 +1,10 @@
+'use client'
+
 import 'animate.css';
 import { useTranslations } from 'next-intl';
 import { Irish_Grover } from 'next/font/google';
 import Image from 'next/image';
-import profilePIC from 'public/images/Foto_perfil.svg';
+import profilePIC from '../../../public/images/Foto_perfil.svg';
 
 const irish = Irish_Grover({
   subsets: ['latin'],
