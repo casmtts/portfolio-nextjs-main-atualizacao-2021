@@ -1,9 +1,17 @@
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './i18n/routing';
 
-export default createMiddleware(routing);
+export default createMiddleware({
+  // Lista de locales suportados pela sua página
+  locales: ['ptbr', 'en'],
+
+  // Locale padrão
+  defaultLocale: 'ptbr'
+});
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(ptbr|en)/:path*']
+  // Ignora as rotas que não devem ser internacionalizadas,
+  // como rotas para arquivos de imagem
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
+
+
