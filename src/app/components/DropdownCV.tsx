@@ -71,7 +71,7 @@ export default function Example() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  <Link href="https://drive.google.com/file/d/1tFzK9zUSJEYYDSynPiLDx9YwSaFmh9ow/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='mr-2' alt='brf' />Currículo</h4></Link>
+                  <Link href="https://drive.google.com/file/d/1dp9Jzj3wV4UrxhXJ2LVSVVhlLF1_cQVw/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='mr-2' alt='brf' />Currículo</h4></Link>
                 </a>
               )}
             </MenuItem>
