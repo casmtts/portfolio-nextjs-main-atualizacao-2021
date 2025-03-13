@@ -121,7 +121,7 @@ function Navbar() {
 
                     <div className="flex flex-row cursor-pointer ">
                         <Link href='/en'><Image className='mx-2 hover:scale-110' src={euaFlagIcon} alt="euaFlagIcon" priority={true} /></Link>
-                        <Link href='/ptbr' ><Image className='mx-2 hover:scale-110' src={brFlagIcon} alt="brFlagIcon" priority={true} /></Link>
+                        <Link href='/pt' ><Image className='mx-2 hover:scale-110' src={brFlagIcon} alt="brFlagIcon" priority={true} /></Link>
                     </div>
                 </div>
             </header>

@@ -51,28 +51,14 @@ export default function Example() {
           <div className="py-1">
             <MenuItem>
               {({ focus }: any) => (
-                <Link
-                  href="#"
-                  className={classNames(
-                    focus ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  <Link href="https://drive.google.com/file/d/1bHEpw2erFzYmLc9OY4rsXLC0P2QZe7LW/view"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={euaFlagIcon} className='mr-2' alt='brf' />Curriculum</h4></Link>
-                </Link>
+                <Link href="https://drive.google.com/file/d/1bHEpw2erFzYmLc9OY4rsXLC0P2QZe7LW/view"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={euaFlagIcon} className='ml-[50px]' alt='brf' />Curriculum</h4></Link>
+
               )}
             </MenuItem>
+            <div className='border-b-2'></div>
             <MenuItem>
               {({ focus }: any) => (
-                <a
-                  href="/CV PT-BR_2024.pdf"
-                  className={classNames(
-                    focus ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  <Link href="https://drive.google.com/file/d/1dp9Jzj3wV4UrxhXJ2LVSVVhlLF1_cQVw/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='mr-2' alt='brf' />Currículo</h4></Link>
-                </a>
+                <Link href="https://drive.google.com/file/d/1dp9Jzj3wV4UrxhXJ2LVSVVhlLF1_cQVw/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='ml-[50px]' alt='brf' />Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
