@@ -2,7 +2,7 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import notFound from '../not-found';
+import notFound from '../[locale]/not-found';
 
 export const metadata: Metadata = {
   title: 'CALIL SOUSA MATTOS Website Portfolio',
@@ -27,7 +27,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
