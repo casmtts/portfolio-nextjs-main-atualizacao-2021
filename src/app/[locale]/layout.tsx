@@ -2,7 +2,7 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import notFound from '../[locale]/not-found';
+import notFound from '../not-found';
 
 export const metadata: Metadata = {
   title: 'CALIL SOUSA MATTOS Website Portfolio',
