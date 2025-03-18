@@ -1,4 +1,8 @@
+import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import notFound from '../app/not-found';
 import './[locale]/globals.css';
 
 export const metadata: Metadata = {
@@ -6,10 +10,30 @@ export const metadata: Metadata = {
   description: 'CALIL SOUSA MATTOS Website Portfolio',
 }
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params
+}: {
   children: React.ReactNode;
-}>) {
-  return children;
+  params: Promise<{ locale: string }>;
+}) {
+  // Ensure that the incoming `locale` is valid
+  const { locale } = await params;
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
+  return (
+    <html lang={locale} suppressHydrationWarning>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
 }

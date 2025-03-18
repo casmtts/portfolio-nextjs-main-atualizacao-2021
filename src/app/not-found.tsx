@@ -7,9 +7,7 @@ const NotFound = () => {
       <h1>404 - Página Não Encontrada</h1>
       <p>
         Desculpe, mas a página que você está procurando não existe. Volte para a{' '}
-        <Link href="/">
-          <a>Página Inicial</a>
-        </Link>.
+        <Link href="/" className='underline'>Página Inicial</Link>
       </p>
     </div>
   );
