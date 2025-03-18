@@ -58,7 +58,7 @@ export default function Example() {
             <div className='border-b-2'></div>
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1G-TEldv7jOjhQ3xh_H6CrOcOpfm9RFgb/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='ml-[50px]' alt='brf' />Currículo</h4></Link>
+                <Link href="https://drive.google.com/file/d/1QcvWct764BSxmPxqSzvOEhN1m_ra-UeQ/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='ml-[50px]' alt='brf' />Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
