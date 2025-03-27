@@ -29,7 +29,7 @@ function Services() {
 
     <section className=' sm:ml-[4rem] h-full min-w-320 ' >
 
-      <h2 className=' text-center md:pr-5 font-bold text-3xl mb-20 bg-[#00FF80] '>{t('title')}</h2>
+      <h2 className=' text-center md:pr-5 font-bold text-3xl xl:ml-[-1.4%] mb-20 bg-[#00FF80] '>{t('title')}</h2>
 
       {/* CARDS SERVIÇOS */}
       <div className=" mx-auto lg:grid grid-cols-3 gap-4 sm:flex sm:flex-col flex-wrap   ">

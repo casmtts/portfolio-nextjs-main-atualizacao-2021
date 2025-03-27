@@ -59,9 +59,9 @@ function Skills() {
   return (
     <div className=' sm:ml-[4rem] lg:ml-[3.3%] xl:ml-[0%]  ' >
 
-      <h2 className=' text-center md:pr-5 font-bold text-3xl mb-20 bg-[#00FF80] '>{t('title')}</h2>
+      <h2 className=' text-center md:pr-5 xl:pl-[0.7%] font-bold text-3xl mb-20 bg-[#00FF80] '>{t('title')}</h2>
 
-      <h2 className=' font-bold text-2xl mb-20 text-center bg-[#f0f0f0] '>{t('frontEndTitle')}</h2>
+      <h2 className=' font-bold text-2xl mb-20 text-center bg-[#f0f0f0] xl:ml-[0%] '>{t('frontEndTitle')}</h2>
 
       <div className=" mb-10 md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
 
@@ -128,7 +128,7 @@ function Skills() {
       </div>
 
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-80rem] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('DatabaseEndTitle')}</h2>
+      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-80rem] xl:ml-[0%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('DatabaseEndTitle')}</h2>
 
       <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
 
@@ -181,7 +181,7 @@ function Skills() {
 
       </div>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-80rem] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('backEndtitle')}</h2>
+      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-80rem] xl:ml-[-0.5%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('backEndtitle')}</h2>
 
       <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
 
@@ -212,7 +212,7 @@ function Skills() {
 
       </div>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-95rem] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('mobileDevTitle')}</h2>
+      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-95rem] xl:ml-[0%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('mobileDevTitle')}</h2>
 
 
       <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
@@ -224,7 +224,7 @@ function Skills() {
 
       </div>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-110rem] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('relatedTechTitle')}</h2>
+      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-110rem] xl:ml-[0%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('relatedTechTitle')}</h2>
 
 
       <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pb-[10rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
