@@ -57,9 +57,9 @@ function Skills() {
   const t = useTranslations('skillsPage');
 
   return (
-    <div className=' sm:ml-[4rem] lg:ml-[3.3%] min-w-320 ' >
+    <div className=' sm:ml-[4rem] lg:ml-[3.3%] xl:ml-[0%]  ' >
 
-      <h2 className=' sm:text-center sm:mt-20 font-bold text-3xl mb-10 bg-[#00FF80] '>{t('title')}</h2>
+      <h2 className=' text-center md:pr-5 font-bold text-3xl mb-20 bg-[#00FF80] '>{t('title')}</h2>
 
       <h2 className=' font-bold text-2xl mb-20 text-center bg-[#f0f0f0] '>{t('frontEndTitle')}</h2>
 
