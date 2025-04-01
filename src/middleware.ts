@@ -2,10 +2,13 @@ import createMiddleware from 'next-intl/middleware';
 
 export default createMiddleware({
   // Lista de locales suportados pela sua página
-  locales: ['en', 'pt'],
+  locales: ['pt', 'en',],
 
   // Locale padrão
-  defaultLocale: 'pt'
+  defaultLocale: 'pt',
+
+  localeDetection: false
+
 });
 
 export const config = {
