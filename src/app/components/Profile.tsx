@@ -22,7 +22,7 @@ function Profile() {
 
       <div>
         <div className='animate__animated animate__zoomIn'>
-          <Image className=" sm:w-[10rem] sm:mx-auto sm:mt-[8rem] lg:mt-[15rem] lg:mx-[70%] xl:mx-[77%] 2xl:mx-[75%] 2xl:w-[13rem] 3xl:mx-[75%] " src={profilePIC} alt='profilePIC' />
+          <Image className=" sm:w-[10rem] sm:mx-auto sm:mt-[8rem] lg:mt-[15rem] lg:mx-[70%] xl:mx-[77%] 2xl:mx-[75%] 2xl:w-[13rem] 3xl:mx-[80%] " src={profilePIC} alt='profilePIC' />
         </div>
         <div className=" sm:text-center sm:mt-[2rem] lg:text-2xl lg:ml-[-22rem] lg:mt-[-6rem] 2xl:mt-[-9rem] 2xl:ml-[-30rem] xl:text-4xl 2xl:text-4xl 2xl:text-5xl 3xl:ml-[-26%] text-[#53DA00E6] font-bold "> <p className='animate__bounceIn'>CALIL SOUSA MATTOS</p> </div>
         <div className='animate__animated animate__pulse'>
