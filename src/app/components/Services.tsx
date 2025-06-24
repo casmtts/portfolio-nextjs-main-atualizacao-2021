@@ -32,10 +32,10 @@ function Services() {
       <h2 className=' text-center md:pr-5 font-bold text-3xl xl:ml-[-1.4%] mb-20 bg-[#00FF80] '>{t('title')}</h2>
 
       {/* CARDS SERVIÇOS */}
-      <div className=" mx-auto lg:grid grid-cols-3 gap-4 sm:flex sm:flex-col flex-wrap   ">
+      <div className=" mx-auto lg:grid grid-cols-3 gap-4 sm:flex sm:flex-col flex-wrap ">
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={frontEndIcon} alt='frontEndIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
+        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-2 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
+          <Image className=' mx-auto pt-10 ' src={frontEndIcon} alt='frontEndIcon https://www.flaticon.com/free-icons/web-design' width={150} height={110} />
           <h3 className=' text-center mt-5 font-bold '>{t('frontEndTitle')}</h3>
           <div className={mohave.className} >
             <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>
