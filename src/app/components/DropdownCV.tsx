@@ -49,14 +49,14 @@ export default function Example() {
           <div className="py-1">
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1bHEpw2erFzYmLc9OY4rsXLC0P2QZe7LW/view"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-5 hover:font-semibold' >Curriculum</h4></Link>
+                <Link href="https://drive.google.com/file/d/1bHEpw2erFzYmLc9OY4rsXLC0P2QZe7LW/view"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Curriculum</h4></Link>
 
               )}
             </MenuItem>
             <div className='border-b-2'></div>
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1QcvWct764BSxmPxqSzvOEhN1m_ra-UeQ/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-5 hover:font-semibold' >Currículo</h4></Link>
+                <Link href="https://drive.google.com/file/d/1QcvWct764BSxmPxqSzvOEhN1m_ra-UeQ/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
