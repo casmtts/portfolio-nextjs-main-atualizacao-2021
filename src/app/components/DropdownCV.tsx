@@ -5,9 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import brFlagIcon from '../../../public/images/brasilflag.svg';
 import cvIcon from '../../../public/images/curriculum-vitae-portfolio-svgrepo-com.svg';
-import euaFlagIcon from '../../../public/images/eua_flag.svg';
 
 
 function classNames(...classes: string[]) {
@@ -51,14 +49,14 @@ export default function Example() {
           <div className="py-1">
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1bHEpw2erFzYmLc9OY4rsXLC0P2QZe7LW/view"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={euaFlagIcon} className='ml-[50px]' alt='brf' />Curriculum</h4></Link>
+                <Link href="https://drive.google.com/file/d/1bHEpw2erFzYmLc9OY4rsXLC0P2QZe7LW/view"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-5 hover:font-semibold' >Curriculum</h4></Link>
 
               )}
             </MenuItem>
             <div className='border-b-2'></div>
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1QcvWct764BSxmPxqSzvOEhN1m_ra-UeQ/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row ' ><Image src={brFlagIcon} className='ml-[50px]' alt='brf' />Currículo</h4></Link>
+                <Link href="https://drive.google.com/file/d/1QcvWct764BSxmPxqSzvOEhN1m_ra-UeQ/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-5 hover:font-semibold' >Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
