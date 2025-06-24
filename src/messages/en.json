@@ -28,8 +28,8 @@
     "uiUxDescription": "UI Design has as its main focus the interface of a particular application or website, UX Design observes this and other aspects, ranging from the path that a user takes to reach their final goal to previous experiences that a person has had with that product or service, which can have an impact.",
     "seoTitle": "SEO",
     "seoDescription": "Positioning websites through certain keywords on the first page of search engines (Google, Bing, Yahoo, etc.), applying complex and feasible strategies to adapt to search engine algorithms.",
-    "secInfoTitle": "CYBERSECURITY SPECIALIST",
-    "secInfoDescription": "Acting as Offensive (Pentest) and Defensive (Blue Team) Security Analyst. with penetration testing, vulnerability analysis, protection of confidential data, implementation of centralized security platforms for control, monitoring and neutralization of threats in the network, endpoints and distraction of possible attackers."
+    "secInfoTitle": "DEVSECOPS SPECIALIST",
+    "secInfoDescription": "Integrates security practices (Security) into software development (Development) and IT operations (Operations). Its mission is to ensure that security is incorporated into all phases of the software development life cycle (SDLC), promoting a collaborative approach to delivering robust, efficient systems that are protected against cyber threats."
   },
   "skillsPage": {
     "title": "Skills",
