@@ -88,7 +88,9 @@
     "jUnitSubtitle": "JUnit is an open-source framework, which resembles the Java software testing beam, created by Erich Gamma and Kent Beck, with support for the creation of automated tests in the Java programming language.",
     "mavenSubtitle": "Apache Maven, or Maven, is a build automation tool used primarily in Java projects. It's similar to the Ant tool, but it's based on different concepts and work in a different way.",
     "swaggerSubtitle": "Swagger is a set of tools for API developers from SmartBear Software and an earlier specification on which the OpenAPI specification is based. The Swagger API project was created in 2011 by Tony Tam, technical co-founder of the dictionary website Wordnik.",
-    "pythonSubtitle": "Python is a high-level, script-interpreted, imperative, object-oriented, functional, dynamically typed, and strong programming language. It was launched by Guido van Rossum in 1991."
+    "pythonSubtitle": "Python is a high-level, script-interpreted, imperative, object-oriented, functional, dynamically typed, and strong programming language. It was launched by Guido van Rossum in 1991.",
+    "ansibleSubtitle": "Ansible is an open source IT automation tool used for infrastructure provisioning, configuration management, and application deployment. It is known for its simplicity and ease of use, using a human-readable language to define automation tasks, and for its security and reliability."
+
   },
   "NotFoundPage": {
     "title": "Page Not Found",

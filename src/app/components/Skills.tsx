@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { useTranslations } from 'next-intl';
 import acessibilidadeIcon from '../../../public/images/acessibilidade.png';
+import ansibleIcon from '../../../public/images/Ansible_logo.svg';
 import awsIcon from '../../../public/images/aws.svg';
 import bootstrap from '../../../public/images/bootstrap.svg';
 import cssIcon from '../../../public/images/css3.svg';
@@ -347,6 +348,11 @@ function Skills() {
         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('pythonSubtitle')} >
           <Image src={pythonIcon} alt='pythonIcon' className=' w-[60%] mx-auto pt-[4rem] ' />
+        </div>
+
+         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+          title={t('ansibleSubtitle')} >
+          <Image src={ansibleIcon} alt='ansibleIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
         </div>
 
       </div>
