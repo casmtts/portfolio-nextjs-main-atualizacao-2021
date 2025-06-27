@@ -46,6 +46,7 @@ import reactNativeIcon from '../../../public/images/react-native.svg';
 import reduxIcon from '../../../public/images/redux.svg';
 import restApiIcon from '../../../public/images/restApi.svg';
 import sequelizeIcon from '../../../public/images/sequelize.svg';
+import sonarQubeIcon from '../../../public/images/sonarqube.svg';
 import swaggerIcon from '../../../public/images/swagger.svg';
 import tailwindIcon from '../../../public/images/TailwindLogo.svg';
 import typeormIcon from '../../../public/images/typeorm.svg';
@@ -359,6 +360,11 @@ function Skills() {
         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('gitlabSubtitle')} >
           <Image src={gitlabIcon} alt='gitlabIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+        </div>
+
+         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+          title={t('sonarQubeSubtitle')} >
+          <Image src={sonarQubeIcon} alt='sonarQubeIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
         </div>
 
       </div>

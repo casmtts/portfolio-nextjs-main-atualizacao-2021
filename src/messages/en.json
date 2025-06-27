@@ -90,7 +90,8 @@
     "swaggerSubtitle": "Swagger is a set of tools for API developers from SmartBear Software and an earlier specification on which the OpenAPI specification is based. The Swagger API project was created in 2011 by Tony Tam, technical co-founder of the dictionary website Wordnik.",
     "pythonSubtitle": "Python is a high-level, script-interpreted, imperative, object-oriented, functional, dynamically typed, and strong programming language. It was launched by Guido van Rossum in 1991.",
     "ansibleSubtitle": "Ansible is an open source IT automation tool used for infrastructure provisioning, configuration management, and application deployment. It is known for its simplicity and ease of use, using a human-readable language to define automation tasks, and for its security and reliability.",
-    "gitlabSubtitle": "GitLab brings together all DevSecOps capabilities into a single application with unified data storage, centralizing everything in one place."
+    "gitlabSubtitle": "GitLab brings together all DevSecOps capabilities into a single application with unified data storage, centralizing everything in one place.",
+    "sonarQubeSubtitle": "SonarQube is an open-source platform for continuous code quality analysis. It helps identify and fix issues like bugs, code smells, security vulnerabilities, and other code quality issues before they reach production. SonarQube supports multiple programming languages ​​and integrates with development tools and CI/CD pipelines, providing an automated approach to code quality assurance."
 
   },
   "NotFoundPage": {
