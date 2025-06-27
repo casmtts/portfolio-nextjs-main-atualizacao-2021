@@ -93,7 +93,8 @@
     "gitlabSubtitle": "GitLab brings together all DevSecOps capabilities into a single application with unified data storage, centralizing everything in one place.",
     "sonarQubeSubtitle": "SonarQube is an open-source platform for continuous code quality analysis. It helps identify and fix issues like bugs, code smells, security vulnerabilities, and other code quality issues before they reach production. SonarQube supports multiple programming languages ​​and integrates with development tools and CI/CD pipelines, providing an automated approach to code quality assurance.",
     "jenkinsSubtitle": "Jenkins is a widely used code automation server for implementing Continuous Integration (CI) and Continuous Delivery (CD) pipelines. It makes it easy to automate tasks related to building, testing, and deploying software, enabling development teams to accelerate the project lifecycle.",
-    "kubernetesSubtitle": "Kubernetes automates operational container management tasks and includes built-in commands for deploying applications, implementing changes to your applications, scaling your applications up and down to meet changing needs, monitoring your applications."
+    "kubernetesSubtitle": "Kubernetes automates operational container management tasks and includes built-in commands for deploying applications, implementing changes to your applications, scaling your applications up and down to meet changing needs, monitoring your applications.",
+    "rancherSubtitle": "Rancher is an open source Kubernetes cluster management platform that makes it easy to deploy and manage containerized applications across on-premises environments and public and private clouds. Rancher provides a unified interface for viewing and managing multiple Kubernetes clusters, simplifying tasks such as provisioning, monitoring, and security."
 
 
   },

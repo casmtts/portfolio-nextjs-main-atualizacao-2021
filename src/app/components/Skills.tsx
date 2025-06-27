@@ -43,6 +43,7 @@ import postmanIcon from '../../../public/images/postman.svg';
 import prismaIcon from '../../../public/images/prisma.svg';
 import prototipacaoIcon from '../../../public/images/prototipacao.png';
 import pythonIcon from '../../../public/images/python.png';
+import rancherIcon from '../../../public/images/rancher.png';
 import reactIcon from '../../../public/images/react-js.svg';
 import reactNativeIcon from '../../../public/images/react-native.svg';
 import reduxIcon from '../../../public/images/redux.svg';
@@ -377,6 +378,11 @@ function Skills() {
         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('kubernetesSubtitle')} >
           <Image src={kubernetesIcon} alt='kubernetesIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
+        </div>
+
+         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+          title={t('rancherSubtitle')} >
+          <Image src={rancherIcon} alt='rancherIcon' className=' w-[60%] mx-auto pt-[3rem] ' />
         </div>
 
       </div>
