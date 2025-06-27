@@ -12,6 +12,7 @@ import dockerIcon from '../../../public/images/docker.svg';
 import expressIcon from '../../../public/images/express.svg';
 import figmaIcon from '../../../public/images/figma.svg';
 import firebaseIcon from '../../../public/images/firebase.svg';
+import jenkinsIcon from '../../../public/images/free-jenkins-icon-download-in-svg-png-gif-file-formats--brand-company-logo-world-logos-vol-3-pack-icons-282385.webp';
 import githubIcon from '../../../public/images/github.svg';
 import gitlabIcon from '../../../public/images/gitlab_original_wordmark_logo_icon_146504.webp';
 import googleCloudIcon from '../../../public/images/google-cloud.webp';
@@ -365,6 +366,11 @@ function Skills() {
          <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('sonarQubeSubtitle')} >
           <Image src={sonarQubeIcon} alt='sonarQubeIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+        </div>
+
+        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+          title={t('jenkinsSubtitle')} >
+          <Image src={jenkinsIcon} alt='jenkinsIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
         </div>
 
       </div>
