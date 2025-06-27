@@ -23,6 +23,7 @@ import javaIcon from '../../../public/images/java.svg';
 import javascriptIcon from '../../../public/images/javascript.svg';
 import jestIcon from '../../../public/images/jest.svg';
 import jUnitIcon from '../../../public/images/JUnit.webp';
+import kubernetesIcon from '../../../public/images/kubernetes-logo-1-1.svg';
 import linuxIcon from '../../../public/images/linux.png';
 import lucidchartIcon from '../../../public/images/lucidchart.webp';
 import materialUi from '../../../public/images/material-ui.svg';
@@ -365,12 +366,17 @@ function Skills() {
 
          <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('sonarQubeSubtitle')} >
-          <Image src={sonarQubeIcon} alt='sonarQubeIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+          <Image src={sonarQubeIcon} alt='sonarQubeIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
         </div>
 
         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('jenkinsSubtitle')} >
-          <Image src={jenkinsIcon} alt='jenkinsIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+          <Image src={jenkinsIcon} alt='jenkinsIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
+        </div>
+
+        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+          title={t('kubernetesSubtitle')} >
+          <Image src={kubernetesIcon} alt='kubernetesIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
         </div>
 
       </div>
