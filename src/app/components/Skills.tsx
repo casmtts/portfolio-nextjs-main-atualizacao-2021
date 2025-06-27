@@ -13,6 +13,7 @@ import expressIcon from '../../../public/images/express.svg';
 import figmaIcon from '../../../public/images/figma.svg';
 import firebaseIcon from '../../../public/images/firebase.svg';
 import githubIcon from '../../../public/images/github.svg';
+import gitlabIcon from '../../../public/images/gitlab_original_wordmark_logo_icon_146504.webp';
 import googleCloudIcon from '../../../public/images/google-cloud.webp';
 import herokuIcon from '../../../public/images/heroku.svg';
 import hibernateIcon from '../../../public/images/hibernate.svg';
@@ -350,9 +351,14 @@ function Skills() {
           <Image src={pythonIcon} alt='pythonIcon' className=' w-[60%] mx-auto pt-[4rem] ' />
         </div>
 
-         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('ansibleSubtitle')} >
           <Image src={ansibleIcon} alt='ansibleIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+        </div>
+
+        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+          title={t('gitlabSubtitle')} >
+          <Image src={gitlabIcon} alt='gitlabIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
         </div>
 
       </div>

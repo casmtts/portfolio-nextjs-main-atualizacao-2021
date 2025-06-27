@@ -89,7 +89,8 @@
     "mavenSubtitle": "Apache Maven, ou Maven, é uma ferramenta de automação de compilação utilizada primariamente em projetos Java. Ela é similar à ferramenta Ant, mas é baseada em conceitos e trabalhos diferentes em um modo diferente.",
     "swaggerSubtitle": "Swagger é um conjunto de ferramentas para desenvolvedores de API da SmartBear Software e uma especificação anterior na qual a especificação OpenAPI se baseia. O projeto Swagger API foi criado em 2011 por Tony Tam, cofundador técnico do site de dicionários Wordnik.",
     "pythonSubtitle": "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.",
-    "ansibleSubtitle": "Ansible é uma ferramenta de automação de TI de código aberto, utilizada para provisionamento de infraestrutura, gerenciamento de configurações e implantação de aplicativos. É conhecido pela sua simplicidade e facilidade de uso, utilizando uma linguagem legível para definir tarefas de automação, e pela sua segurança e confiabilidade."
+    "ansibleSubtitle": "Ansible é uma ferramenta de automação de TI de código aberto, utilizada para provisionamento de infraestrutura, gerenciamento de configurações e implantação de aplicativos. É conhecido pela sua simplicidade e facilidade de uso, utilizando uma linguagem legível para definir tarefas de automação, e pela sua segurança e confiabilidade.",
+    "gitlabSubtitle": "O GitLab reúne todos os recursos de DevSecOps em uma única aplicação com armazenamento de dados unificado, centralizando tudo em um só lugar."
 
   },
   "NotFoundPage": {
