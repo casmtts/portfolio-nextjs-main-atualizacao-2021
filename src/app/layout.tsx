@@ -1,39 +1,11 @@
-import { routing } from '@/i18n/routing';
-import type { Metadata } from 'next';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import notFound from '../app/not-found';
-import './[locale]/globals.css';
+import { ReactNode } from 'react';
 
-export const metadata: Metadata = {
-  title: 'CALIL SOUSA MATTOS Website Portfolio',
-  description: 'CALIL SOUSA MATTOS Website Portfolio',
-}
+type Props = {
+  children: ReactNode;
+};
 
-export default async function LocaleLayout({
-  children,
-  params
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
-  // Ensure that the incoming `locale` is valid
-  const { locale } = await params;
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
-
-  return (
-    <html lang={locale} suppressHydrationWarning>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+// Since we have a `not-found.tsx` page on the root, a layout file
+// is required, even if it's just passing children through.
+export default function RootLayout({ children }: Props) {
+  return children;
 }
