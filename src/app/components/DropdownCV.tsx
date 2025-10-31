@@ -56,7 +56,7 @@ export default function Example() {
             <div className='border-b-2'></div>
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1nvUUXkAlwgmtSiYD4J4Ae73g58mpR0TL/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Currículo</h4></Link>
+                <Link href="https://drive.google.com/file/d/1sNLJMU5DSJmDaSjjNmSELDIG52i-sBxv/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
