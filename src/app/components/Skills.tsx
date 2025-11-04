@@ -63,7 +63,7 @@ function Skills() {
   const t = useTranslations('skillsPage');
 
   return (
-    <div className=' sm:ml-[4rem] lg:ml-[3.3%] xl:ml-[0%] md:pb-[115%] lg:pb-[20%] xl:pb-[0%] ' >
+    <div className=' sm:ml-[4rem] lg:ml-[3.3%] xl:ml-[0%] md:pb-[115%] xl:pb-[20%] xl:pb-[0%] ' >
 
       <h2 className=' text-center md:pr-5 xl:pl-[0.7%] font-bold text-3xl mb-20 bg-[#00FF80] '>{t('title')}</h2>
 
@@ -365,7 +365,7 @@ function Skills() {
           <Image src={gitlabIcon} alt='gitlabIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
         </div>
 
-         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('sonarQubeSubtitle')} >
           <Image src={sonarQubeIcon} alt='sonarQubeIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
         </div>
@@ -380,7 +380,7 @@ function Skills() {
           <Image src={kubernetesIcon} alt='kubernetesIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
         </div>
 
-         <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
           title={t('rancherSubtitle')} >
           <Image src={rancherIcon} alt='rancherIcon' className=' w-[60%] mx-auto pt-[3rem] ' />
         </div>
