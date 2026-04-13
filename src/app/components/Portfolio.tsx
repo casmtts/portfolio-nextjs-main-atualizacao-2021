@@ -19,6 +19,7 @@ import lpDalacoinImage from '../../../public/images/lp_DalaCoin.png';
 import siteFreteRapidoImage from '../../../public/images/SITE_freterapido.png';
 import siteFreteRapidoImageOriginal from '../../../public/images/SITE_freterapidoOriginal.png';
 import OdontoCareImage from '../../../public/images/tela_sistema.png';
+import SAMImage from '../../../public/images/S.A.M-sistema_de_abastecimento.png';
 
 
 function Portfolio() {
@@ -28,6 +29,7 @@ function Portfolio() {
   const [showModalGiroCerto, setShowModalGiroCerto] = React.useState(false);
   const [showModalAppGestao, setShowModalAppGestao] = React.useState(false);
   const [showModalOdontoCare, setShowModalOdontoCare] = React.useState(false);
+  const [showModalSAM, setShowModalSAM] = React.useState(false);
   const [showModalArtworkFigures, setShowModalArtworkFigures] = React.useState(false);
   const [showModalEcommerceVega, setShowModalEcommerceVega] = React.useState(false);
   const [showModalMultiInvest, setShowModalMultiInvest] = React.useState(false);
@@ -272,6 +274,56 @@ function Portfolio() {
                         className="text-red-500 font-bold uppercase px-1 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="button"
                         onClick={() => setShowModalOdontoCare(false)}
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+            </>
+          ) : null}
+        </>
+
+        {/*S.A.M*/}
+        <>
+          <button
+            className=" ml-auto mr-auto text-white font-bold uppercase text-sm px-1 py-3 outline-none focus:outline-none mr-1 lg:mb-10 ease-linear transition-all duration-150"
+            type="button"
+            onClick={() => setShowModalSAM(true)}
+          >
+            <div className=' hover:scale-105 cursor-pointer '>
+              <Image src={SAMImage} alt='SAMImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+            </div>
+          </button>
+          {showModalSAM ? (
+            <>
+              <div
+                className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50  focus:outline-none"
+              >
+                <div className=" bg-white relative w-auto my-10 mx-auto max-w-5xl">
+                  {/*content*/}
+                  <div className=" rounded-lg bg-white relative flex flex-col w-full outline-none focus:outline-none">
+                    {/*header*/}
+                    <div className=" flex items-start justify-between p-5 rounded-t">
+                      <button
+                        className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                        onClick={() => setShowModalSAM(false)}
+                      >
+                      </button>
+                    </div>
+                    {/*body*/}
+                    <Link href={'https://s-a-m-sistema-municipal-de-abasteci.vercel.app/'} >
+                      <Image src={SAMImage} alt='SAMImage' className=' xl:mt-10 ' />
+                    </Link>
+                    <h1 className=' pt-10 font-bold text-3xl bg-white text-center '>Sistema de abastecimento da Farmácia Municipal</h1>
+                    {/*footer*/}
+                    <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
+                      <button
+                        className="text-red-500 font-bold uppercase px-1 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button"
+                        onClick={() => setShowModalSAM(false)}
                       >
                         Fechar
                       </button>
