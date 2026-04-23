@@ -24,7 +24,7 @@ export default function Contact() {
         <BsLinkedin color='blue' size={45} className=' mx-auto ' />
         <Link href="https://www.linkedin.com/in/calil-mattos-programador/" className=' text-xl text-center hover:font-bold mb-10 ' >Linkedin</Link>
         <AiFillGithub color='black' size={45} className=' mx-auto ' />
-        <Link href="https://github.com/CMTTSx?tab=repositories" className=' text-xl text-center hover:font-bold ' >GitHub</Link>
+        <Link href="https://github.com/casmtts?tab=repositories" className=' text-xl text-center hover:font-bold ' >GitHub</Link>
       </div>
     </div>
   );
