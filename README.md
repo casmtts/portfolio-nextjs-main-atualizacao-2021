@@ -36,4 +36,6 @@ Projeto Site Portfolio
 1- NEXTJS
 2- TYPESCRIPT
 3- TAILWIND 
-
+4- Next-Intl
+5- ANIMATE.CSS
+6- VERCEL
