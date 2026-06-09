@@ -47,16 +47,18 @@ export default function Example() {
       >
         <MenuItems className="absolute z-10 mt-2 w-[8rem] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
+            {/* Curriculum */}
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1m4ZnLcQ9P4EELGJ-QwzZTFWpx1HQlaTg/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Curriculum</h4></Link>
+                <Link href="https://drive.google.com/file/d/1MQq9EjBxNP0TpwQUz7CE14kLI7UnfUAz/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Curriculum</h4></Link>
 
               )}
             </MenuItem>
             <div className='border-b-2'></div>
+            {/* Currículo */}
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/17B3V2DfOpUt1ioF8qNIHte8V2mLP6oZs/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Currículo</h4></Link>
+                <Link href="https://drive.google.com/file/d/1eAKYOsWAmL_1UetWN0WZnG0uNe7aoovo/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-black ml-6 hover:font-semibold' >Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
