@@ -102,6 +102,21 @@
     "title": "Page Not Found",
     "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
   },
+  "PortfolioPage": {
+    "title": "PORTFOLIO",
+    "close": "Close",
+    "freteRapidoTitle": "Super Frete Rápido Website",
+    "giroCertoTitle": "Giro Certo App",
+    "cryptoWalletTitle": "Crypto Wallet App",
+    "appGestaoTitle": "Management App",
+    "odontoCareTitle": "Dental Care and Management System",
+    "samTitle": "Municipal Pharmacy Supply System",
+    "artworkFiguresTitle": "Artwork Figures Online Store",
+    "ecommerceVegaTitle": "Vega Intimate Products Online Store",
+    "multiInvestTitle": "MultiInvest Investment Website",
+    "dalaCoinTitle": "DalaCoin Cryptocurrency Investment Platform",
+    "logisticaTitle": "Cargo Logistics Website"
+  },
   "Contact": {
     "getInContact": "Contact Us:"
   },

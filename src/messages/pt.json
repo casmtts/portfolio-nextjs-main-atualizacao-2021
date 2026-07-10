@@ -101,6 +101,21 @@
     "title": "Página não encontrada",
     "description": "Oops! Parece que você se deparou com uma página que não existe. Não se preocupe, nossa mágica de internacionalização ainda está trabalhando duro em outras partes do aplicativo. Sinta-se livre para navegar de volta para explorar mais!"
   },
+  "PortfolioPage": {
+    "title": "PORTFOLIO",
+    "close": "Fechar",
+    "freteRapidoTitle": "Site Super Frete Rápido",
+    "giroCertoTitle": "App Giro Certo",
+    "cryptoWalletTitle": "App Crypto Wallet",
+    "appGestaoTitle": "App de Gestão",
+    "odontoCareTitle": "Sistema Odontológico de Atendimento e Gestão",
+    "samTitle": "Sistema de abastecimento da Farmácia Municipal",
+    "artworkFiguresTitle": "Loja Virtual Artwork Figures",
+    "ecommerceVegaTitle": "Loja Virtual Vega Produtos Íntimos",
+    "multiInvestTitle": "Site de Investimento MultiInvest",
+    "dalaCoinTitle": "Plataforma de Investimento em Criptomoedas DalaCoin",
+    "logisticaTitle": "Site Cargo Logística"
+  },
   "Contact": {
     "getInContact": "Entre em contato:"
   },

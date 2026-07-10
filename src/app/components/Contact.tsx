@@ -1,31 +1,55 @@
 'use client'
 
-import Link from 'next/link';
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { AiFillGithub } from 'react-icons/ai'
+import { BsLinkedin, BsMailbox2 } from 'react-icons/bs'
+import { SECTION_IDS } from '@/app/constants/sections'
+import Section from './layout/Section'
 
-
-//Import icons
-import { useTranslations } from 'next-intl';
-import { AiFillGithub } from 'react-icons/ai';
-import { BsLinkedin, BsMailbox2 } from 'react-icons/bs';
+const CONTACT_LINKS = [
+  {
+    icon: BsMailbox2,
+    color: 'red',
+    href: 'mailto:contatocsmpm@gmail.com',
+    label: 'contatocsmpm@gmail.com',
+  },
+  {
+    icon: BsLinkedin,
+    color: 'blue',
+    href: 'https://www.linkedin.com/in/calil-mattos-programador/',
+    label: 'LinkedIn',
+  },
+  {
+    icon: AiFillGithub,
+    color: 'black',
+    href: 'https://github.com/casmtts?tab=repositories',
+    label: 'GitHub',
+  },
+] as const
 
 export default function Contact() {
-
-  const t = useTranslations('Contact');
-
+  const t = useTranslations('Contact')
 
   return (
-    <div className=' sm:ml-[4rem] sm:mt-20 2xl:ml-[4rem] min-w-320 ' >
+    <Section id={SECTION_IDS.contact} className="pb-8">
+      <h2 className="text-center text-2xl font-bold xs:text-3xl lg:text-4xl">{t('getInContact')}</h2>
 
-      <h1 className=' text-4xl text-center sm:font-bold lg:font-normal lg:hover:font-bold cursor-pointer ' >{t('getInContact')}</h1>
-
-      <div className=' sm:ml-[-0.22rem] 2xl:ml-[-2.2rem] flex flex-col text-center mt-20 ' >
-        <BsMailbox2 color='red' size={45} className=' mx-auto ' />
-        <Link href="mailto:contatocsmpm@gmail.com" className=' text-xl text-center hover:font-bold mb-10 ' >contatocsmpm@gmail.com</Link>
-        <BsLinkedin color='blue' size={45} className=' mx-auto ' />
-        <Link href="https://www.linkedin.com/in/calil-mattos-programador/" className=' text-xl text-center hover:font-bold mb-10 ' >Linkedin</Link>
-        <AiFillGithub color='black' size={45} className=' mx-auto ' />
-        <Link href="https://github.com/casmtts?tab=repositories" className=' text-xl text-center hover:font-bold ' >GitHub</Link>
+      <div className="mx-auto mt-12 flex max-w-md flex-col items-center gap-8 xs:mt-16 lg:max-w-lg">
+        {CONTACT_LINKS.map(({ icon: Icon, color, href, label }) => (
+          <div key={label} className="flex flex-col items-center gap-3">
+            <Icon color={color} size={45} aria-hidden />
+            <Link
+              href={href}
+              target={href.startsWith('mailto:') ? undefined : '_blank'}
+              rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+              className="text-lg transition-all hover:font-bold xs:text-xl"
+            >
+              {label}
+            </Link>
+          </div>
+        ))}
       </div>
-    </div>
-  );
+    </Section>
+  )
 }
