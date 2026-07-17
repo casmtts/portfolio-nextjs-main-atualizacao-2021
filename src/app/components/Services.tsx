@@ -27,88 +27,88 @@ function Services() {
 
   return (
 
-    <section className=' sm:ml-[4rem] h-full min-w-320 ' >
+    <section className='ml-[4rem] h-full min-w-320'>
 
-      <h2 className=' text-center md:pr-5 font-bold text-3xl xl:ml-[-1.4%] mb-20 bg-[#00FF80] '>{t('title')}</h2>
+      <h2 className='text-center font-bold text-3xl xl:text-4xl 2xl:text-4xl mb-20 bg-[#00FF80] py-2'>{t('title')}</h2>
 
       {/* CARDS SERVIÇOS */}
-      <div className=" mx-auto lg:grid grid-cols-3 gap-4 sm:flex sm:flex-col flex-wrap ">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 lg:px-[5%] xl:px-[7%] 2xl:px-[10%]">
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-2 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={frontEndIcon} alt='frontEndIcon https://www.flaticon.com/free-icons/web-design' width={150} height={110} />
-          <h3 className=' text-center mt-5 font-bold '>{t('frontEndTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={frontEndIcon} alt='frontEndIcon' width={150} height={110} />
+          <h3 className='text-center mt-5 font-bold'>{t('frontEndTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>
               {t('frontEndDescription')}
             </p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={backEndIcon} alt='backEndIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('backEndTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={backEndIcon} alt='backEndIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('backEndTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>
               {t('backEndDescription')}
             </p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={sistemasIcon} alt='sistemasIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('devSystemsTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={sistemasIcon} alt='sistemasIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('devSystemsTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>
               {t('devSystemsDescription')}
             </p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={appIcon} alt='appIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('devAppTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>{t('devAppDescription')}</p>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={appIcon} alt='appIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('devAppTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>{t('devAppDescription')}</p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={websiteIcon} alt='websiteIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('Site&HotsiteTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>{t('Site&HotsiteDescription')}</p>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={websiteIcon} alt='websiteIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('Site&HotsiteTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>{t('Site&HotsiteDescription')}</p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={landingpageIcon} alt='landingpageIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('LandingPagesTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>{t('LandingPagesDescription')}</p>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={landingpageIcon} alt='landingpageIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('LandingPagesTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>{t('LandingPagesDescription')}</p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' mx-auto pt-10 ' src={uiuxIcon} alt='uiuxIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('uiUxTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>{t('uiUxDescription')}</p>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={uiuxIcon} alt='uiuxIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('uiUxTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>{t('uiUxDescription')}</p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] md:mt-1 lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%]  ">
-          <Image className=' pl-2 ml-auto mr-auto pt-10 ' src={seoIcon} alt='seoIcon https://www.flaticon.com/free-icons/web-design' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('seoTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>{t('seoDescription')}</p>
+        <div className="w-full h-[30rem]">
+          <Image className='mx-auto pt-10' src={seoIcon} alt='seoIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('seoTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>{t('seoDescription')}</p>
           </div>
         </div>
 
-        <div className=" sm:ml-[0rem] sm:mr-[0rem] md:mx-[10rem] lg:ml-[10%] md:p sm:w-[100%] md:w-[50%] h-[30rem] lg:mr-[0rem] lg:w-[80%] 2xl:ml-[7%] 2xl:w-[80%] mb-[10rem] ">
-          <Image className=' mx-auto pt-10 ' src={cybersecurityIcon} alt='cybersecurityIcon' width={150} height={150} />
-          <h3 className=' text-center mt-5 font-bold '>{t('secInfoTitle')}</h3>
-          <div className={mohave.className} >
-            <p className=' text-justify sm:ml-[5%] sm:mr-[5%] sm:mt-[8%] '>{t('secInfoDescription')}</p>
+        <div className="w-full h-[30rem] mb-[10rem]">
+          <Image className='mx-auto pt-10' src={cybersecurityIcon} alt='cybersecurityIcon' width={150} height={150} />
+          <h3 className='text-center mt-5 font-bold'>{t('secInfoTitle')}</h3>
+          <div className={mohave.className}>
+            <p className='text-justify px-[5%] mt-[8%]'>{t('secInfoDescription')}</p>
           </div>
         </div>
 

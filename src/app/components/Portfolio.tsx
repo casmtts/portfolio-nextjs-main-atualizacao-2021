@@ -38,7 +38,7 @@ function Portfolio() {
 
 
   return (
-    <section className=' sm:ml-[4rem] min-w-320 '  >
+    <section className=' sm:ml-[4rem] min-w-320 mt-[45rem] '  >
 
       <h2 className=' text-center sm:mt-20 md:mt-[-50rem] xl:pl-[0.7%] font-bold text-3xl mb-20 bg-[#00FF80] '>PORTFOLIO</h2>
 

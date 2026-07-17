@@ -63,326 +63,322 @@ function Skills() {
   const t = useTranslations('skillsPage');
 
   return (
-    <div className=' sm:ml-[4rem] lg:ml-[3.3%] xl:ml-[0%] md:pb-[115%] xl:pb-[20%] xl:pb-[0%] ' >
+    <div className='ml-[4rem] xl:mt-5'>
 
-      <h2 className=' text-center md:pr-5 xl:pl-[0.7%] font-bold text-3xl mb-20 bg-[#00FF80] '>{t('title')}</h2>
+      <h2 className='text-center font-bold text-3xl xl:text-4xl 2xl:text-4xl mb-20 bg-[#00FF80] py-2'>{t('title')}</h2>
 
-      <h2 className=' font-bold text-2xl mb-20 text-center bg-[#f0f0f0] xl:ml-[0%] '>{t('frontEndTitle')}</h2>
+      <h2 className='font-bold text-2xl mb-20 text-center bg-[#f0f0f0] py-2'>{t('frontEndTitle')}</h2>
 
-      <div className=" mb-10 md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
+      <div className="mb-10 px-4 lg:px-[5%] xl:px-[7%] 2xl:px-[10%] gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('htmlSubtitle')}
-        ><Image src={html5Icon} alt='html5Icon' className=' sm:w-[80%] mx-auto pt-3 ' />
+        ><Image src={html5Icon} alt='html5Icon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('cssSubtitle')}
-        ><Image src={cssIcon} alt='cssIcon' className=' sm:w-[60%] mx-auto pt-4 ' />
+        ><Image src={cssIcon} alt='cssIcon' className='w-[60%]' />
         </div>
 
-        <div className=' sm:w-[10rem] sm:mx-auto md:mx-0 2xl:w-[10rem] 2xl:h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('jsSubtitle')}
-        ><Image src={javascriptIcon} alt='javascriptIcon' className=' 2xl:w-[12rem] 2xl:h-[12rem] mx-auto ' />
+        ><Image src={javascriptIcon} alt='javascriptIcon' className='w-[80%]' />
         </div>
 
-        <div className=' sm:w-[10rem] sm:mx-auto md:mx-0 2xl:w-[10rem] 2xl:h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('typescriptSubtitle')}
-        ><Image src={typescriptIcon} alt='typescriptIcon' className=' 2xl:w-[12rem] 2xl:h-[12rem] mx-auto' />
+        ><Image src={typescriptIcon} alt='typescriptIcon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('reduxSubtitle')}
-        ><Image src={reduxIcon} alt='reduxIcon' className=' sm:w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4 font-bold ' >Redux</h5>
+        ><Image src={reduxIcon} alt='reduxIcon' className='w-[50%]' />
+          <h5 className='text-center font-bold text-sm'>Redux</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('reactSubtitle')}
-        ><Image src={reactIcon} alt='reactIcon' className=' sm:w-[50%] mx-auto pt-7 ' />
-          <h5 className='text-center pt-4 font-bold '>React</h5>
+        ><Image src={reactIcon} alt='reactIcon' className='w-[50%]' />
+          <h5 className='text-center font-bold text-sm'>React</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('nextjsSubtitle')}
-        ><Image src={nextjsIcon} alt='nextjsIcon' className=' sm:w-[80%] mx-auto pt-[4rem] ' />
+        ><Image src={nextjsIcon} alt='nextjsIcon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('tailwindSubtitle')}
-        ><Image src={tailwindIcon} alt='tailwindIcon' className=' sm:w-[80%] mx-auto pt-[4.4rem] ' />
+        ><Image src={tailwindIcon} alt='tailwindIcon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('bootstrapSubtitle')}
-        ><Image src={bootstrap} alt='bootstrap' className='  w-[60%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4 font-bold '>Bootstrap</h5>
+        ><Image src={bootstrap} alt='bootstrap' className='w-[60%]' />
+          <h5 className='text-center font-bold text-sm'>Bootstrap</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('materialUiSubtitle')}
-        ><Image src={materialUi} alt='materialUi' className=' sm:w-[60%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4 font-bold '>Material UI</h5>
+        ><Image src={materialUi} alt='materialUi' className='w-[60%]' />
+          <h5 className='text-center font-bold text-sm'>Material UI</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('materialDesignSubtitle')}
-        ><Image src={materialDesign} alt='materialDesign' className=' sm:w-[50%] mx-auto pt-2 ' />
-          <h5 className='text-center pt-4 font-bold '>Material Design</h5>
+        ><Image src={materialDesign} alt='materialDesign' className='w-[50%]' />
+          <h5 className='text-center font-bold text-sm'>Material Design</h5>
         </div>
 
       </div>
 
+      <h2 className='font-bold text-2xl mt-10 mb-20 text-center bg-[#f0f0f0] py-2'>{t('DatabaseEndTitle')}</h2>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-80rem] xl:ml-[0%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('DatabaseEndTitle')}</h2>
+      <div className="mb-10 px-4 lg:px-[5%] xl:px-[7%] 2xl:px-[10%] gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
 
-      <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
-
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('mysqlSubtitle')}
-        ><Image src={mysqlIcon} alt='mysqlIcon' className=' w-[100%] mx-auto pt-10  ' />
+        ><Image src={mysqlIcon} alt='mysqlIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('postgresSubtitle')}
-        ><Image src={postgresIcon} alt='postgresIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={postgresIcon} alt='postgresIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('mongoSubtitle')}
-        ><Image src={mongodbIcon} alt='mongodbIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={mongodbIcon} alt='mongodbIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('typeormSubtitle')}
-        ><Image src={typeormIcon} alt='typeormIcon' className=' w-[50%] mx-auto pt-7 ' />
-          <h5 className='text-center pt-4 font-bold '>Type ORM</h5>
+        ><Image src={typeormIcon} alt='typeormIcon' className='w-[50%]' />
+          <h5 className='text-center font-bold text-sm'>Type ORM</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('prismaSubtitle')}
-        ><Image src={prismaIcon} alt='prismaIcon' className=' w-[80%] mx-auto pt-12 ' />
+        ><Image src={prismaIcon} alt='prismaIcon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('sequelizeSubtitle')}
-        ><Image src={sequelizeIcon} alt='sequelizeIcon' className=' w-[80%] mx-auto pt-12 ' />
+        ><Image src={sequelizeIcon} alt='sequelizeIcon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('mongooseSubtitle')}
-        ><Image src={mongooseIcon} alt='mongooseIcon' className=' w-[100%] mx-auto pt-7 ' />
+        ><Image src={mongooseIcon} alt='mongooseIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('firebaseSubtitle')}
-        ><Image src={firebaseIcon} alt='firebaseIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={firebaseIcon} alt='firebaseIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('hibernateSubtitle')}
-        ><Image src={hibernateIcon} alt='hibernateIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={hibernateIcon} alt='hibernateIcon' className='w-[100%]' />
         </div>
-
 
       </div>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-80rem] xl:ml-[-0.5%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('backEndtitle')}</h2>
+      <h2 className='font-bold text-2xl mt-10 mb-20 text-center bg-[#f0f0f0] py-2'>{t('backEndtitle')}</h2>
 
-      <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
+      <div className="mb-10 px-4 lg:px-[5%] xl:px-[7%] 2xl:px-[10%] gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('apiSubtitle')}
-        ><Image src={restApiIcon} alt='restApiIcon' className=' w-[50%] mx-auto pt-10  ' />
+        ><Image src={restApiIcon} alt='restApiIcon' className='w-[50%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('nodeSubtitle')}
-        ><Image src={nodeIcon} alt='nodeIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={nodeIcon} alt='nodeIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('expressSubtitle')}
-        ><Image src={expressIcon} alt='expressIcon' className=' w-[100%] mx-auto pt-10  ' />
+        ><Image src={expressIcon} alt='expressIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('nestjsSubtitle')}
-        ><Image src={nestJsIcon} alt='nestJsIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={nestJsIcon} alt='nestJsIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('javaSubtitle')}
-        ><Image src={javaIcon} alt='javaIcon' className=' w-[50%] mx-auto  ' />
+        ><Image src={javaIcon} alt='javaIcon' className='w-[50%]' />
         </div>
 
       </div>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-95rem] xl:ml-[0%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('mobileDevTitle')}</h2>
+      <h2 className='font-bold text-2xl mt-10 mb-20 text-center bg-[#f0f0f0] py-2'>{t('mobileDevTitle')}</h2>
 
+      <div className="mb-10 px-4 lg:px-[5%] xl:px-[7%] 2xl:px-[10%] gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
 
-      <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
-
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('reactNativeSubtitle')}
-        ><Image src={reactNativeIcon} alt='reactNativeIcon' className=' w-[100%] mx-auto  ' />
+        ><Image src={reactNativeIcon} alt='reactNativeIcon' className='w-[100%]' />
         </div>
 
       </div>
 
-      <h2 className=' font-bold text-2xl sm:mt-[5rem] md:mt-[-40rem] lg:mt-[-110rem] xl:ml-[0%] mb-20 text-center bg-[#f0f0f0] mt-[-85rem] '>{t('relatedTechTitle')}</h2>
+      <h2 className='font-bold text-2xl mt-10 mb-20 text-center bg-[#f0f0f0] py-2'>{t('relatedTechTitle')}</h2>
 
+      <div className="pb-[10rem] px-4 lg:px-[5%] xl:px-[7%] 2xl:px-[10%] gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
 
-      <div className=" sm:mt-[5rem] md:pl-[5.5rem] lg:pl-[5rem] lg:pb-[10rem] lg:pr-[5rem] xl:pl-[10rem] 2xl:pl-[10rem] 2xl:pr-[6rem] gap-20 sm:flex sm:flex-col md:grid grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 grid-rows-9 flex-wrap ">
-
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('acessibilitySubtitle')}
-        ><Image src={prototipacaoIcon} alt='prototipacaoIcon' className=' w-[50%] mx-auto pt-5' />
-          <h5 className='text-center pt-4' >{t('protoTitle')}</h5>
+        ><Image src={prototipacaoIcon} alt='prototipacaoIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>{t('protoTitle')}</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('usabilitySubtitle')}
-        ><Image src={usabilidadeIcon} alt='usabilidadeIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >{t('usabilityTitle')}</h5>
+        ><Image src={usabilidadeIcon} alt='usabilidadeIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>{t('usabilityTitle')}</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('acessibilitySubtitle')}
-        ><Image src={acessibilidadeIcon} alt='acessibilidadeIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >{t('acessibilityTitle')}</h5>
+        ><Image src={acessibilidadeIcon} alt='acessibilidadeIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>{t('acessibilityTitle')}</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('figmaSubtitle')}
-        ><Image src={figmaIcon} alt='figmaIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >Figma</h5>
+        ><Image src={figmaIcon} alt='figmaIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>Figma</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('githubSubtitle')}
-        ><Image src={githubIcon} alt='githubIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >Github</h5>
+        ><Image src={githubIcon} alt='githubIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>Github</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('photoshopSubtitle')}
-        ><Image src={photoshopIcon} alt='photoshopIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >Photoshop</h5>
+        ><Image src={photoshopIcon} alt='photoshopIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>Photoshop</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('linuxSubtitle')}
-        ><Image src={linuxIcon} alt='linuxIcon' className=' w-[100%] mx-auto pt-10 ' />
+        ><Image src={linuxIcon} alt='linuxIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
           title={t('notionSubtitle')}
-        ><Image src={notionIcon} alt='notionIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >Notion</h5>
+        ><Image src={notionIcon} alt='notionIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>Notion</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('lucidchartSubtitle')} >
-          <Image src={lucidchartIcon} alt='lucidchartIcon' className=' w-[100%] mx-auto pt-10 ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('lucidchartSubtitle')}>
+          <Image src={lucidchartIcon} alt='lucidchartIcon' className='w-[100%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('npmSubtitle')} >
-          <Image src={npmIcon} alt='npmIcon' className=' w-[80%] mx-auto pt-10 ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('npmSubtitle')}>
+          <Image src={npmIcon} alt='npmIcon' className='w-[80%]' />
         </div>
 
-        <div className=' sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer bg-[#147bac] '
-          title={t('yarnSubtitle')} >
-          <Image src={yarnIcon} alt='yarnIcon' className=' w-[70%] mx-auto pt-5 ' />
-          <h5 className='text-center text-white '>Yarn</h5>
+        <div className='w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer bg-[#147bac] flex flex-col items-center justify-center rounded-lg'
+          title={t('yarnSubtitle')}>
+          <Image src={yarnIcon} alt='yarnIcon' className='w-[70%]' />
+          <h5 className='text-center text-white text-sm'>Yarn</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('jestSubtitle')} >
-          <Image src={jestIcon} alt='jestIcon' className=' w-[50%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-4' >Jest</h5>
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('jestSubtitle')}>
+          <Image src={jestIcon} alt='jestIcon' className='w-[50%]' />
+          <h5 className='text-center text-sm'>Jest</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('googleSubtitle')} >
-          <Image src={googleCloudIcon} alt='googleCloudIcon' className=' w-[80%] mx-auto pt-[4.5rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('googleSubtitle')}>
+          <Image src={googleCloudIcon} alt='googleCloudIcon' className='w-[80%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('awsSubtitle')} >
-          <Image src={awsIcon} alt='awsIcon' className=' w-[50%] mx-auto pt-[4rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('awsSubtitle')}>
+          <Image src={awsIcon} alt='awsIcon' className='w-[50%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('vercelSubtitle')} >
-          <Image src={vercelIcon} alt='vercelIcon' className=' w-[90%] mx-auto pt-[4rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('vercelSubtitle')}>
+          <Image src={vercelIcon} alt='vercelIcon' className='w-[90%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('herokuSubtitle')} >
-          <Image src={herokuIcon} alt='herokuIcon' className=' w-[90%] mx-auto pt-[3rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('herokuSubtitle')}>
+          <Image src={herokuIcon} alt='herokuIcon' className='w-[90%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('dockerSubtitle')} >
-          <Image src={dockerIcon} alt='dockerIcon' className=' w-[90%] mx-auto pt-5 ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('dockerSubtitle')}>
+          <Image src={dockerIcon} alt='dockerIcon' className='w-[90%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('postmanSubtitle')} >
-          <Image src={postmanIcon} alt='postmanIcon' className=' w-[90%] mx-auto pt-[3rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('postmanSubtitle')}>
+          <Image src={postmanIcon} alt='postmanIcon' className='w-[90%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('jUnitSubtitle')} >
-          <Image src={jUnitIcon} alt='jUnitIcon' className=' w-[90%] mx-auto pt-[3.5rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('jUnitSubtitle')}>
+          <Image src={jUnitIcon} alt='jUnitIcon' className='w-[90%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('mavenSubtitle')} >
-          <Image src={mavenIcon} alt='mavenIcon' className=' w-[90%] mx-auto pt-2 ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('mavenSubtitle')}>
+          <Image src={mavenIcon} alt='mavenIcon' className='w-[90%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('swaggerSubtitle')} >
-          <Image src={swaggerIcon} alt='swaggerIcon' className=' w-[60%] mx-auto pt-5 ' />
-          <h5 className='text-center pt-1 ' >Swagger</h5>
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('swaggerSubtitle')}>
+          <Image src={swaggerIcon} alt='swaggerIcon' className='w-[60%]' />
+          <h5 className='text-center text-sm'>Swagger</h5>
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('pythonSubtitle')} >
-          <Image src={pythonIcon} alt='pythonIcon' className=' w-[60%] mx-auto pt-[4rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('pythonSubtitle')}>
+          <Image src={pythonIcon} alt='pythonIcon' className='w-[60%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('ansibleSubtitle')} >
-          <Image src={ansibleIcon} alt='ansibleIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('ansibleSubtitle')}>
+          <Image src={ansibleIcon} alt='ansibleIcon' className='w-[60%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('gitlabSubtitle')} >
-          <Image src={gitlabIcon} alt='gitlabIcon' className=' w-[60%] mx-auto pt-[1rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('gitlabSubtitle')}>
+          <Image src={gitlabIcon} alt='gitlabIcon' className='w-[60%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('sonarQubeSubtitle')} >
-          <Image src={sonarQubeIcon} alt='sonarQubeIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('sonarQubeSubtitle')}>
+          <Image src={sonarQubeIcon} alt='sonarQubeIcon' className='w-[60%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('jenkinsSubtitle')} >
-          <Image src={jenkinsIcon} alt='jenkinsIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('jenkinsSubtitle')}>
+          <Image src={jenkinsIcon} alt='jenkinsIcon' className='w-[60%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('kubernetesSubtitle')} >
-          <Image src={kubernetesIcon} alt='kubernetesIcon' className=' w-[60%] mx-auto pt-[2rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('kubernetesSubtitle')}>
+          <Image src={kubernetesIcon} alt='kubernetesIcon' className='w-[60%]' />
         </div>
 
-        <div className=' border-2 sm:w-[10rem] sm:mx-auto md:mx-0 w-[10rem] h-[10rem] hover:scale-110 cursor-pointer '
-          title={t('rancherSubtitle')} >
-          <Image src={rancherIcon} alt='rancherIcon' className=' w-[60%] mx-auto pt-[3rem] ' />
+        <div className='border-2 w-full aspect-square max-w-[10rem] mx-auto hover:scale-110 cursor-pointer flex flex-col items-center justify-center'
+          title={t('rancherSubtitle')}>
+          <Image src={rancherIcon} alt='rancherIcon' className='w-[60%]' />
         </div>
 
       </div>
