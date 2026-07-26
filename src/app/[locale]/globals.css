@@ -37,3 +37,30 @@
     @apply grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 2xl:grid-cols-3 3xl:gap-10;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  @supports (-webkit-hyphens: none) {
+    .profile-name,
+    .profile-position,
+    .profile-description {
+      transform: none !important;
+    }
+
+    .profile-name,
+    .profile-position {
+      margin-left: -6rem !important;
+    }
+
+    .profile-description {
+      margin-left: 18rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  @supports (-webkit-hyphens: none) {
+    .profile-description {
+      margin-left: 40rem !important;
+    }
+  }
+}
