@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
+import { scrollToSection } from '../constants/sections';
 
 //Images
 import brFlagIcon from '../../../public/images/brasilflag.svg';
@@ -54,24 +55,7 @@ function Navbar() {
     };
 
     const goToPortfolio = () => {
-
-        const mediaQuery = window.matchMedia('(min-width: 320px)')
-        // Check if the media query is true
-        if (mediaQuery.matches) {
-            window.scrollTo({
-                top: 17500,
-                behavior: "smooth",
-            })
-        }
-
-        const mediaQuery1024 = window.matchMedia('(min-width: 1024px)')
-        // Check if the media query is true
-        if (mediaQuery1024.matches) {
-            window.scrollTo({
-                top: 7300,
-                behavior: "smooth",
-            })
-        }
+        scrollToSection('portfolio');
     };
 
     const goToContact = () => {
