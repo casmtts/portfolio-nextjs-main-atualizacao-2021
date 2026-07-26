@@ -13,12 +13,12 @@ export default function PortfolioCard({ thumbnail, alt, onClick }: PortfolioCard
     <button
       type="button"
       onClick={onClick}
-      className="w-full overflow-hidden rounded-lg transition-transform hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      className="w-full overflow-hidden rounded-lg bg-white transition-transform hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
     >
       <Image
         src={thumbnail}
         alt={alt}
-        className="h-auto w-full object-cover"
+        className="h-full w-full object-contain"
         sizes="(max-width: 425px) 100vw, (max-width: 768px) 50vw, 33vw"
       />
     </button>

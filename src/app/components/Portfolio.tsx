@@ -6,17 +6,14 @@ import Link from 'next/link';
 import React from 'react';
 import AppGestaoImage from '../../../public/images/Aplicativo_de_gestao.png';
 import giroCertoImage from '../../../public/images/CORTE_FINAL_GIRO_CERTO.png';
-import cryptoAppImage from '../../../public/images/CryptoApp Wallet.png';
 import cryptoAppImageOriginal from '../../../public/images/CryptoApp WalletOriginal.png';
 import ArtworkFiguresImage from '../../../public/images/ECOMMERCE_Action-Figures.png';
 import ArtworkFiguresImageOriginal from '../../../public/images/ECOMMERCE_Action-FiguresOriginal.png';
-import EcommerceVegaImage from '../../../public/images/ECOMMERCE_VEGA-SHOP.png';
 import EcommerceVegaImageOriginal from '../../../public/images/ECOMMERCE_VEGA-SHOP_Original.png';
 import logisticaImage from '../../../public/images/logistica.png';
 import MultinvestImage from '../../../public/images/LP-MultiInvest.png';
 import logisticaImageOriginal from '../../../public/images/LP_CARGO LOGISTICA.png';
 import lpDalacoinImage from '../../../public/images/lp_DalaCoin.png';
-import siteFreteRapidoImage from '../../../public/images/SITE_freterapido.png';
 import siteFreteRapidoImageOriginal from '../../../public/images/SITE_freterapidoOriginal.png';
 import OdontoCareImage from '../../../public/images/tela_sistema.png';
 import SAMImage from '../../../public/images/S.A.M-sistema_de_abastecimento.png';
@@ -36,6 +33,33 @@ function Portfolio() {
   const [showModalDalaCoin, setShowModalDalaCoin] = React.useState(false);
   const [showModalLogistica, setShowModalLogistica] = React.useState(false);
 
+  const closeAllModals = React.useCallback(() => {
+    setShowModalFreteRapido(false);
+    setShowModalCryptoWallet(false);
+    setShowModalGiroCerto(false);
+    setShowModalAppGestao(false);
+    setShowModalOdontoCare(false);
+    setShowModalSAM(false);
+    setShowModalArtworkFigures(false);
+    setShowModalEcommerceVega(false);
+    setShowModalMultiInvest(false);
+    setShowModalDalaCoin(false);
+    setShowModalLogistica(false);
+  }, []);
+
+  React.useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeAllModals();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [closeAllModals]);
 
   return (
     <section className=' sm:ml-[4rem] min-w-320 mt-[45rem] '  >
@@ -51,7 +75,11 @@ function Portfolio() {
             onClick={() => setShowModalFreteRapido(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={siteFreteRapidoImage} alt='siteFreteRapidoImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={siteFreteRapidoImageOriginal}
+                alt='siteFreteRapidoImage'
+                className='h-[10rem] w-[15rem] rounded-lg object-cover sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalFreteRapido ? (
@@ -59,9 +87,9 @@ function Portfolio() {
               <div
                 className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50  focus:outline-none"
               >
-                <div className=" relative w-auto my-10 mx-auto max-w-5xl">
+                <div className=" relative w-auto my-10 mx-auto max-w-5xl bg-white">
                   {/*content*/}
-                  <div className=" relative flex flex-col w-full outline-none focus:outline-none">
+                  <div className=" relative flex flex-col w-full bg-white outline-none focus:outline-none">
                     {/*header*/}
                     <div className=" flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                       <button
@@ -71,9 +99,15 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Link href={'https://super-frete-rapido-site.vercel.app/'}>
-                      <Image src={siteFreteRapidoImageOriginal} alt='siteFreteRapidoImageOriginal' className='sm:pt-[50rem] sm2:pt-[51rem] sm3:pt-[54rem] sm4:pt-[58rem] sm5:pt-[63rem] md:pt-[147rem] lg:mt-[61rem] ' />
-                    </Link>
+                    <div className="max-h-[80vh] overflow-y-auto px-4">
+                      <Link href={'https://super-frete-rapido-site.vercel.app/'}>
+                        <Image
+                          src={siteFreteRapidoImageOriginal}
+                          alt='siteFreteRapidoImageOriginal'
+                          className='mx-auto h-auto w-auto max-w-full object-contain'
+                        />
+                      </Link>
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl bg-white text-center '>Site Super Frete Rápido</h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
@@ -101,7 +135,11 @@ function Portfolio() {
             onClick={() => setShowModalGiroCerto(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={giroCertoImage} alt='giroCertoImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={giroCertoImage}
+                alt='giroCertoImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalGiroCerto ? (
@@ -121,7 +159,9 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={giroCertoImage} alt='giroCertoImage' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={giroCertoImage} alt='giroCertoImage' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl bg-white text-center '>App Giro Certo</h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
@@ -149,7 +189,11 @@ function Portfolio() {
             onClick={() => setShowModalCryptoWallet(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={cryptoAppImage} alt='cryptoAppImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={cryptoAppImageOriginal}
+                alt='cryptoAppImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalCryptoWallet ? (
@@ -169,7 +213,9 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={cryptoAppImageOriginal} alt='cryptoAppImageOriginal' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={cryptoAppImageOriginal} alt='cryptoAppImageOriginal' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl text-center '>App Crypto Wallet</h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
@@ -197,7 +243,11 @@ function Portfolio() {
             onClick={() => setShowModalAppGestao(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={AppGestaoImage} alt='AppGestaoImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={AppGestaoImage}
+                alt='AppGestaoImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalAppGestao ? (
@@ -217,7 +267,9 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={AppGestaoImage} alt='AppGestaoImage' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={AppGestaoImage} alt='AppGestaoImage' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
                       <button
@@ -244,7 +296,11 @@ function Portfolio() {
             onClick={() => setShowModalOdontoCare(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={OdontoCareImage} alt='OdontoCareImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={OdontoCareImage}
+                alt='OdontoCareImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalOdontoCare ? (
@@ -265,7 +321,9 @@ function Portfolio() {
                     </div>
                     {/*body*/}
                     <Link href={'https://odonto-care-system.vercel.app/'} >
-                      <Image src={OdontoCareImage} alt='OdontoCareImage' className=' xl:mt-10 ' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={OdontoCareImage} alt='OdontoCareImage' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     </Link>
                     <h1 className=' pt-10 font-bold text-3xl bg-white text-center '>Sistema Odontológico de Atendimento e Gestão</h1>
                     {/*footer*/}
@@ -294,7 +352,11 @@ function Portfolio() {
             onClick={() => setShowModalSAM(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={SAMImage} alt='SAMImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={SAMImage}
+                alt='SAMImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalSAM ? (
@@ -315,7 +377,9 @@ function Portfolio() {
                     </div>
                     {/*body*/}
                     <Link href={'https://s-a-m-sistema-municipal-de-abasteci.vercel.app/'} >
-                      <Image src={SAMImage} alt='SAMImage' className=' xl:mt-10 ' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={SAMImage} alt='SAMImage' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     </Link>
                     <h1 className=' pt-10 font-bold text-3xl bg-white text-center '>Sistema de abastecimento da Farmácia Municipal</h1>
                     {/*footer*/}
@@ -344,7 +408,11 @@ function Portfolio() {
             onClick={() => setShowModalArtworkFigures(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={ArtworkFiguresImage} alt='ArtworkFiguresImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={ArtworkFiguresImage}
+                alt='ArtworkFiguresImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalArtworkFigures ? (
@@ -365,7 +433,9 @@ function Portfolio() {
                     </div>
                     {/*body*/}
                     <Link href={'https://artwork-figures.vercel.app/'} >
-                      <Image src={ArtworkFiguresImageOriginal} alt='ArtworkFiguresImageOriginal' className=' xl:mt-[10rem] ' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={ArtworkFiguresImageOriginal} alt='ArtworkFiguresImageOriginal' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     </Link>
                     <h1 className=' pt-10 font-bold text-3xl text-center '>Loja Virtual Artwork Figures</h1>
                     {/*footer*/}
@@ -394,7 +464,11 @@ function Portfolio() {
             onClick={() => setShowModalEcommerceVega(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={EcommerceVegaImage} alt='EcommerceVegaImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={EcommerceVegaImageOriginal}
+                alt='EcommerceVegaImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalEcommerceVega ? (
@@ -414,7 +488,9 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={EcommerceVegaImageOriginal} alt='EcommerceVegaImageOriginal' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={EcommerceVegaImageOriginal} alt='EcommerceVegaImageOriginal' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl text-center '>Loja Virtual Vega Produtos Íntimos </h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
@@ -442,7 +518,11 @@ function Portfolio() {
             onClick={() => setShowModalMultiInvest(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={MultinvestImage} alt='MultinvestImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={MultinvestImage}
+                alt='MultinvestImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalMultiInvest ? (
@@ -462,7 +542,9 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={MultinvestImage} alt='MultinvestImage' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={MultinvestImage} alt='MultinvestImage' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl text-center '>Site de Investimento MultiInvest</h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
@@ -490,7 +572,11 @@ function Portfolio() {
             onClick={() => setShowModalDalaCoin(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={lpDalacoinImage} alt='lpDalacoinImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={lpDalacoinImage}
+                alt='lpDalacoinImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalDalaCoin ? (
@@ -510,7 +596,9 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={lpDalacoinImage} alt='lpDalacoinImage' />
+                    <div className="flex max-h-[78vh] justify-center overflow-hidden px-4">
+                      <Image src={lpDalacoinImage} alt='lpDalacoinImage' className='h-auto w-auto max-h-[78vh] max-w-full object-contain' />
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl text-center '>Plataforma de Investimento em Criptomoedas DalaCoin</h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
@@ -538,7 +626,11 @@ function Portfolio() {
             onClick={() => setShowModalLogistica(true)}
           >
             <div className=' hover:scale-105 cursor-pointer '>
-              <Image src={logisticaImage} alt='logisticaImage' className='sm:w-[15rem] sm:h-[10rem] md:w-[30rem] md:h-[19.8rem] ' />
+              <Image
+                src={logisticaImage}
+                alt='logisticaImage'
+                className='h-[10rem] w-[15rem] rounded-lg bg-white object-contain sm:w-[15rem] md:h-[19.8rem] md:w-[30rem]'
+              />
             </div>
           </button>
           {showModalLogistica ? (
@@ -546,9 +638,9 @@ function Portfolio() {
               <div
                 className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50  focus:outline-none"
               >
-                <div className="  relative w-auto my-10 mx-auto max-w-5xl">
+                <div className="  relative w-auto my-10 mx-auto max-w-5xl bg-white">
                   {/*content*/}
-                  <div className=" rounded-lg relative flex flex-col w-full outline-none focus:outline-none">
+                  <div className=" rounded-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                     {/*header*/}
                     <div className=" flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                       <button
@@ -558,7 +650,13 @@ function Portfolio() {
                       </button>
                     </div>
                     {/*body*/}
-                    <Image src={logisticaImageOriginal} alt='logisticaImageOriginal' className='sm:pt-[35rem] sm2:pt-[42rem] sm3:pt-[45rem] sm4:pt-[48rem] sm5:pt-[50rem] md:pt-[121rem] lg:mt-[48rem] 2xl:mt-[36rem] ' />
+                    <div className="max-h-[80vh] overflow-y-auto px-4">
+                      <Image
+                        src={logisticaImageOriginal}
+                        alt='logisticaImageOriginal'
+                        className='mx-auto h-auto w-auto max-w-full object-contain'
+                      />
+                    </div>
                     <h1 className=' pt-10 font-bold text-3xl text-center bg-white '>Site Cargo Logística</h1>
                     {/*footer*/}
                     <div className="flex items-center justify-end p-6 bg-white border-blueGray-200">
