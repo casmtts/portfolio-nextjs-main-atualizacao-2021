@@ -13,12 +13,7 @@ import uiuxIcon from '../../../public/images/ui-ux.png';
 import websiteIcon from '../../../public/images/web-site.png';
 
 import { useTranslations } from 'next-intl';
-import { Mohave } from 'next/font/google';
-
-const mohave = Mohave({
-  subsets: ['latin'],
-  weight: '300'
-})
+import { mohaveLight } from '../fonts';
 
 
 function Services() {
@@ -37,7 +32,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={frontEndIcon} alt='frontEndIcon' width={150} height={110} />
           <h3 className='text-center mt-5 font-bold'>{t('frontEndTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>
               {t('frontEndDescription')}
             </p>
@@ -47,7 +42,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={backEndIcon} alt='backEndIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('backEndTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>
               {t('backEndDescription')}
             </p>
@@ -57,7 +52,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={sistemasIcon} alt='sistemasIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('devSystemsTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>
               {t('devSystemsDescription')}
             </p>
@@ -67,7 +62,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={appIcon} alt='appIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('devAppTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>{t('devAppDescription')}</p>
           </div>
         </div>
@@ -75,7 +70,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={websiteIcon} alt='websiteIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('Site&HotsiteTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>{t('Site&HotsiteDescription')}</p>
           </div>
         </div>
@@ -83,7 +78,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={landingpageIcon} alt='landingpageIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('LandingPagesTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>{t('LandingPagesDescription')}</p>
           </div>
         </div>
@@ -91,7 +86,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={uiuxIcon} alt='uiuxIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('uiUxTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>{t('uiUxDescription')}</p>
           </div>
         </div>
@@ -99,7 +94,7 @@ function Services() {
         <div className="w-full h-[30rem]">
           <Image className='mx-auto pt-10' src={seoIcon} alt='seoIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('seoTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>{t('seoDescription')}</p>
           </div>
         </div>
@@ -107,7 +102,7 @@ function Services() {
         <div className="w-full h-[30rem] mb-[10rem]">
           <Image className='mx-auto pt-10' src={cybersecurityIcon} alt='cybersecurityIcon' width={150} height={150} />
           <h3 className='text-center mt-5 font-bold'>{t('secInfoTitle')}</h3>
-          <div className={mohave.className}>
+          <div className={mohaveLight.className}>
             <p className='text-justify px-[5%] mt-[8%]'>{t('secInfoDescription')}</p>
           </div>
         </div>

@@ -1,12 +1,7 @@
 'use client'
 
 import Image, { StaticImageData } from 'next/image'
-import { Mohave } from 'next/font/google'
-
-const mohave = Mohave({
-  subsets: ['latin'],
-  weight: '300',
-})
+import { mohaveLight } from '../../fonts'
 
 type ServiceCardProps = {
   icon: StaticImageData
@@ -35,7 +30,7 @@ export default function ServiceCard({
         height={iconHeight}
       />
       <h3 className="mt-5 text-center text-base font-bold xs:text-lg">{title}</h3>
-      <div className={mohave.className}>
+      <div className={mohaveLight.className}>
         <p className="mt-4 text-justify text-sm xs:text-base">{description}</p>
       </div>
     </article>

@@ -10,11 +10,11 @@ function Profile() {
   const t = useTranslations('ProfilePage');
 
   return (
-    <div className="flex ml-[4rem] sm:pb-[18rem] lg:pb-[27rem] w-[90%] min-w-320">
-      <div className="w-full">
-        <div className="animate__animated animate__zoomIn">
+    <section className="ml-[4rem] sm:pb-[18rem] lg:pb-[27rem] w-[90%] min-w-320">
+      <div className="flex w-full min-w-0 flex-col items-center lg:items-start">
+        <div className="w-full min-w-0 animate__animated animate__zoomIn">
           <Image
-            className="mx-auto w-[10rem] h-auto sm:mt-[8rem] lg:mt-[15rem] lg:ml-[70%] xl:ml-[77%] 2xl:ml-[75%] 2xl:w-[13rem] 3xl:ml-[80%]"
+            className="mx-auto h-auto w-[10rem] sm:mt-[8rem] lg:mt-[15rem] lg:ml-[70%] xl:ml-[77%] 2xl:ml-[75%] 2xl:w-[13rem] 3xl:ml-[80%]"
             src={profilePIC}
             alt="profilePIC"
           />
@@ -28,14 +28,14 @@ function Profile() {
           </div>
         </div>
         <div className={irishGrover.className}>
-          <div className="profile-description sm:mt-[2rem] sm:ml-[1rem] sm:mr-[1rem] lg:ml-[15rem] lg:max-w-[42rem] xl:max-w-[46rem] 2xl:ml-[10rem] 2xl:max-w-[50rem] 3xl:ml-[30rem] 3xl:max-w-[56rem] 3xl:text-2xl text-justify font-bold text-[#363537] leading-relaxed whitespace-normal break-words hyphens-auto [overflow-wrap:anywhere]">
+          <div className="profile-description sm:mt-[2rem] sm:ml-[1rem] sm:mr-[1rem] lg:ml-[15rem] lg:max-w-[calc(100vw-22rem)] xl:max-w-[calc(100vw-24rem)] 2xl:ml-[10rem] 2xl:max-w-[calc(100vw-28rem)] 3xl:ml-[30rem] 3xl:max-w-[calc(100vw-34rem)] 3xl:text-2xl text-justify font-bold text-[#363537] leading-relaxed whitespace-normal break-words hyphens-auto [overflow-wrap:anywhere] min-w-0">
             <p className="animate__animated animate__lightSpeedInLeft">
               {t('description')}
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
