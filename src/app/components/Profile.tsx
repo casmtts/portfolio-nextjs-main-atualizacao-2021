@@ -14,7 +14,7 @@ function Profile() {
       <div className='lg:w-fit'>
         <div className='animate__animated animate__zoomIn'>
           <Image
-            className=" sm:w-[10rem] sm:mx-auto sm:mt-[8rem] lg:mt-[15rem] lg:mx-[70%] xl:mx-[77%] 2xl:mx-[75%] 2xl:w-[13rem] 3xl:mx-[80%] "
+            className=" sm:w-[10rem] sm:mx-auto sm:mt-[8rem] lg:mt-[15rem] lg:mx-[70%] xl:mx-[77%] 2xl:mx-[75%] 2xl:w-[13rem] 3xl:mx-[150%] "
             src={profilePIC}
             alt='profilePIC'
           />
@@ -28,7 +28,7 @@ function Profile() {
           </div>
         </div>
         <div className={irishGrover.className}>
-          <div className=" sm:mt-[2rem] sm:ml-[1rem] sm:mr-[1rem] lg:ml-[7rem] lg:mr-[25rem] 2xl:text-xl 2xl:ml-[10rem] 2xl:mr-[35%] 3xl:ml-[15rem] 3xl:mr-[40%] 3xl:text-2xl text-justify font-bold font-irish text-[#363537]  ">
+          <div className=" sm:mt-[2rem] sm:ml-[1rem] sm:mr-[1rem] lg:mt-[2rem] lg:ml-[-22rem] lg:mr-[25rem] lg:max-w-[52rem] xl:max-w-[58rem] 2xl:mt-[2rem] 2xl:ml-[-30rem] 2xl:mr-[35%] 2xl:max-w-[64rem] 3xl:ml-[-35rem] 3xl:mr-[30%] 3xl:max-w-[70rem] 3xl:text-2xl text-justify font-bold font-irish text-[#363537]  ">
             <p className='animate__animated animate__lightSpeedInLeft'>
               {t('description')}
             </p>
