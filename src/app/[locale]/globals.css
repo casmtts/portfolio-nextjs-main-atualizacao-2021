@@ -38,29 +38,31 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 1025px) {
   @supports (-webkit-hyphens: none) {
+    .profile-shell {
+      padding-inline: clamp(6rem, 16vw, 20rem) !important;
+    }
+
+    .profile-content {
+      width: 100% !important;
+      max-width: 58rem !important;
+    }
+
     .profile-name,
     .profile-position,
     .profile-description {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
       transform: none !important;
-    }
-
-    .profile-name,
-    .profile-position {
-      margin-left: -6rem !important;
-    }
-
-    .profile-description {
-      margin-left: 18rem !important;
     }
   }
 }
 
 @media screen and (min-width: 1280px) {
   @supports (-webkit-hyphens: none) {
-    .profile-description {
-      margin-left: 40rem !important;
+    .profile-shell {
+      padding-inline: clamp(8rem, 18vw, 20rem) !important;
     }
   }
 }
