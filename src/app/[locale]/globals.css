@@ -56,6 +56,10 @@
       margin-right: 0 !important;
       transform: none !important;
     }
+
+    .profile-description {
+      font-size: 1.375rem !important;
+    }
   }
 }
 
