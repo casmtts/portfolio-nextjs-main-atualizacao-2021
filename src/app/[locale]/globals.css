@@ -37,36 +37,3 @@
     @apply grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 2xl:grid-cols-3 3xl:gap-10;
   }
 }
-
-@media screen and (min-width: 1025px) {
-  @supports (-webkit-hyphens: none) {
-    .profile-shell {
-      padding-inline: clamp(6rem, 16vw, 20rem) !important;
-    }
-
-    .profile-content {
-      width: 100% !important;
-      max-width: 58rem !important;
-    }
-
-    .profile-name,
-    .profile-position,
-    .profile-description {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-      transform: none !important;
-    }
-
-    .profile-description {
-      font-size: calc(1.375rem * 0.85) !important;
-    }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  @supports (-webkit-hyphens: none) {
-    .profile-shell {
-      padding-inline: clamp(8rem, 18vw, 20rem) !important;
-    }
-  }
-}
