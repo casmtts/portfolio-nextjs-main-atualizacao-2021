@@ -5,8 +5,8 @@ import { getMessages } from 'next-intl/server';
 import notFound from '../not-found';
 
 export const metadata: Metadata = {
-  title: 'CALIL SOUSA MATTOS Website Portfolio',
-  description: 'CALIL SOUSA MATTOS Website Portfolio',
+  title: 'CALIL SOUSA MATTOS | WEBSITE | PORTFOLIO',
+  description: 'CALIL SOUSA MATTOS | WEBSITE | PORTFOLIO',
 }
 
 export default async function LocaleLayout({
