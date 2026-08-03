@@ -14,18 +14,18 @@ export default function Contact() {
 
 
   return (
-    <div className=' sm:ml-[4rem] sm:mt-20 2xl:ml-[4rem] min-w-320 ' >
+    <section id='contact' className='content-section scroll-mt-20 text-center' aria-labelledby='contact-title'>
 
-      <h1 className=' text-4xl text-center sm:font-bold lg:font-normal lg:hover:font-bold cursor-pointer ' >{t('getInContact')}</h1>
+      <h2 id='contact-title' className='text-3xl font-bold sm:text-4xl'>{t('getInContact')}</h2>
 
-      <div className=' sm:ml-[-0.22rem] 2xl:ml-[-2.2rem] flex flex-col text-center mt-20 ' >
+      <div className='mt-12 flex flex-col text-center'>
         <BsMailbox2 color='red' size={45} className=' mx-auto ' />
         <Link href="mailto:contatocsmpm@gmail.com" className=' text-xl text-center hover:font-bold mb-10 ' >contatocsmpm@gmail.com</Link>
         <BsLinkedin color='blue' size={45} className=' mx-auto ' />
-        <Link href="https://www.linkedin.com/in/calil-mattos-programador/" className=' text-xl text-center hover:font-bold mb-10 ' >Linkedin</Link>
+        <Link href="https://www.linkedin.com/in/calil-mattos-programador/" target='_blank' rel='noopener noreferrer' className=' text-xl text-center hover:font-bold mb-10 ' >LinkedIn</Link>
         <AiFillGithub color='black' size={45} className=' mx-auto ' />
-        <Link href="https://github.com/casmtts?tab=repositories" className=' text-xl text-center hover:font-bold ' >GitHub</Link>
+        <Link href="https://github.com/casmtts?tab=repositories" target='_blank' rel='noopener noreferrer' className=' text-xl text-center hover:font-bold ' >GitHub</Link>
       </div>
-    </div>
+    </section>
   );
 }

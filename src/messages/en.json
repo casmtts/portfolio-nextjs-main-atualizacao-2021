@@ -10,6 +10,21 @@
     "portfolioTitle": "Portfolio",
     "contactTitle": "Contact"
   },
+  "PortfolioPage": {
+    "title": "Portfolio",
+    "close": "Close",
+    "freteRapidoTitle": "Super Frete Rápido Website",
+    "giroCertoTitle": "Giro Certo App",
+    "cryptoWalletTitle": "Crypto Wallet App",
+    "appGestaoTitle": "Management App",
+    "odontoCareTitle": "Odonto Care System",
+    "samTitle": "Municipal Supply System",
+    "artworkFiguresTitle": "Artwork Figures E-commerce",
+    "ecommerceVegaTitle": "Vega Shop E-commerce",
+    "multiInvestTitle": "Multi Invest Landing Page",
+    "dalaCoinTitle": "DalaCoin Landing Page",
+    "logisticaTitle": "Cargo Logistics Landing Page"
+  },
   "ServicesPage": {
     "title": "Services",
     "frontEndTitle": "FRONT-END DEVELOPER",

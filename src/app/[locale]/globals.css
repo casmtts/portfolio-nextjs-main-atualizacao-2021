@@ -17,23 +17,27 @@
     @apply ml-sidebar w-[calc(100%-4rem)] min-w-[320px];
   }
 
+  .content-section {
+    @apply ml-16 w-[calc(100%-4rem)] min-w-0 px-5 py-16 xs:px-6 sm:px-8 lg:px-12 xl:px-16;
+  }
+
   .section-title {
-    @apply mb-12 text-center text-2xl font-bold bg-accent xs:text-3xl lg:mb-16 xl:text-4xl;
+    @apply mb-10 rounded-md bg-accent py-2 text-center text-2xl font-bold xs:text-3xl lg:mb-12 xl:text-4xl;
   }
 
   .section-subtitle {
-    @apply mb-8 text-center text-xl font-bold bg-[#f0f0f0] xs:text-2xl lg:mb-10;
+    @apply mb-6 rounded-md bg-[#f0f0f0] py-2 text-center text-xl font-bold xs:text-2xl;
   }
 
   .skill-grid {
-    @apply grid grid-cols-2 gap-4 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8;
+    @apply grid grid-cols-2 justify-items-center gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8;
   }
 
   .portfolio-grid {
-    @apply grid grid-cols-1 gap-4 xs:gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8 2xl:gap-10;
+    @apply mx-auto grid max-w-content grid-cols-1 justify-items-center gap-6 lg:grid-cols-3 xl:gap-8;
   }
 
   .services-grid {
-    @apply grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 2xl:grid-cols-3 3xl:gap-10;
+    @apply mx-auto grid max-w-content grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8;
   }
 }

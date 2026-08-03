@@ -12,7 +12,6 @@ import logisticaImage from '../../../public/images/logistica.png'
 import MultinvestImage from '../../../public/images/LP-MultiInvest.png'
 import logisticaImageOriginal from '../../../public/images/LP_CARGO LOGISTICA.png'
 import lpDalacoinImage from '../../../public/images/lp_DalaCoin.png'
-import siteFreteRapidoImage from '../../../public/images/SITE_freterapido.png'
 import siteFreteRapidoImageOriginal from '../../../public/images/SITE_freterapidoOriginal.png'
 import OdontoCareImage from '../../../public/images/tela_sistema.png'
 import SAMImage from '../../../public/images/S.A.M-sistema_de_abastecimento.png'
@@ -23,15 +22,19 @@ export type PortfolioItem = {
   modalImage: StaticImageData
   titleKey: string
   href?: string
+  modalImageClassName?: string
+  modalVariant?: 'legacy'
 }
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'frete-rapido',
-    thumbnail: siteFreteRapidoImage,
+    thumbnail: siteFreteRapidoImageOriginal,
     modalImage: siteFreteRapidoImageOriginal,
     titleKey: 'freteRapidoTitle',
     href: 'https://super-frete-rapido-site.vercel.app/',
+    modalImageClassName: 'mx-auto h-auto w-auto max-w-full object-contain',
+    modalVariant: 'legacy',
   },
   {
     id: 'giro-certo',
@@ -95,5 +98,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     thumbnail: logisticaImage,
     modalImage: logisticaImageOriginal,
     titleKey: 'logisticaTitle',
+    modalImageClassName: 'mx-auto h-auto w-auto max-w-full object-contain',
+    modalVariant: 'legacy',
   },
 ]

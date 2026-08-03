@@ -20,7 +20,7 @@ export default function SkillIcon({
   variant = 'bordered',
 }: SkillIconProps) {
   const baseClasses =
-    'flex h-28 w-28 flex-col items-center justify-center transition-transform hover:scale-110 cursor-pointer xs:h-32 xs:w-32 sm:h-36 sm:w-36'
+    'flex aspect-square w-full max-w-[10rem] flex-col items-center justify-center transition-transform hover:scale-105 focus-within:scale-105'
 
   const variantClasses = {
     bordered: 'border-2 border-gray-200 rounded-lg',

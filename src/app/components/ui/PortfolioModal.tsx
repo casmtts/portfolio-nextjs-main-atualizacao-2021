@@ -2,7 +2,7 @@
 
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
-import { ReactNode } from 'react'
+import { ReactNode, useEffect, useRef } from 'react'
 
 type PortfolioModalProps = {
   isOpen: boolean
@@ -13,6 +13,7 @@ type PortfolioModalProps = {
   href?: string
   closeLabel: string
   imageClassName?: string
+  variant?: 'legacy'
   children?: ReactNode
 }
 
@@ -25,8 +26,31 @@ export default function PortfolioModal({
   href,
   closeLabel,
   imageClassName = 'h-auto w-full max-h-[70vh] object-contain',
+  variant,
   children,
 }: PortfolioModalProps) {
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    if (!isOpen) return
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        onClose()
+      }
+    }
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    window.addEventListener('keydown', handleKeyDown)
+    closeButtonRef.current?.focus()
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isOpen, onClose])
+
   if (!isOpen) return null
 
   const imageElement = (
@@ -41,12 +65,13 @@ export default function PortfolioModal({
         aria-modal="true"
         aria-labelledby="portfolio-modal-title"
       >
-        <div className="relative mx-auto my-8 w-full max-w-4xl rounded-lg bg-white shadow-xl xl:max-w-5xl 2xl:max-w-6xl">
+        <div className={`relative mx-auto my-8 w-full bg-white shadow-xl ${variant === 'legacy' ? 'max-w-5xl' : 'max-w-4xl rounded-lg xl:max-w-5xl 2xl:max-w-6xl'}`}>
           <div className="flex flex-col">
-            <div className="flex justify-end p-4">
+            <div className={`flex justify-end ${variant === 'legacy' ? 'border-b border-gray-200 p-5' : 'p-4'}`}>
               <button
                 type="button"
                 onClick={onClose}
+                ref={closeButtonRef}
                 className="text-2xl font-semibold text-gray-400 transition-colors hover:text-gray-600"
                 aria-label={closeLabel}
               >
@@ -54,7 +79,7 @@ export default function PortfolioModal({
               </button>
             </div>
 
-            <div className="px-4 pb-4">
+            <div className={variant === 'legacy' ? 'max-h-[80vh] overflow-y-auto px-4' : 'px-4 pb-4'}>
               {href ? (
                 <Link href={href} target="_blank" rel="noopener noreferrer">
                   {imageElement}
@@ -65,13 +90,13 @@ export default function PortfolioModal({
               {children}
               <h3
                 id="portfolio-modal-title"
-                className="pt-6 text-center text-xl font-bold xs:text-2xl lg:text-3xl"
+                className={variant === 'legacy' ? 'bg-white pt-10 text-center text-3xl font-bold' : 'pt-6 text-center text-xl font-bold xs:text-2xl lg:text-3xl'}
               >
                 {title}
               </h3>
             </div>
 
-            <div className="flex justify-end border-t border-gray-200 p-4">
+            <div className={`flex justify-end ${variant === 'legacy' ? 'p-6' : 'border-t border-gray-200 p-4'}`}>
               <button
                 type="button"
                 onClick={onClose}
