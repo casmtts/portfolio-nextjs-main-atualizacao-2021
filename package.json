@@ -2,6 +2,7 @@
   "name": "portfolio-nextjs",
   "version": "10.0.0",
   "private": true,
+  "packageManager": "npm@10.9.4",
   "overrides": {
     "brace-expansion": "^1.1.17",
     "next": {
