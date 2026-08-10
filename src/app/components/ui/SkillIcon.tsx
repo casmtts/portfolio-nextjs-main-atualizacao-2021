@@ -9,6 +9,7 @@ type SkillIconProps = {
   alt: string
   title: string
   label?: string
+  iconColor?: string
   imageClassName?: string
   variant?: 'bordered' | 'plain' | 'filled'
 }
@@ -19,6 +20,7 @@ export default function SkillIcon({
   alt,
   title,
   label,
+  iconColor,
   imageClassName = 'w-[60%] mx-auto pt-5',
   variant = 'bordered',
 }: SkillIconProps) {
@@ -36,7 +38,7 @@ export default function SkillIcon({
       {src ? (
         <Image src={src} alt={alt} className={imageClassName} />
       ) : Icon ? (
-        <Icon aria-label={alt} className="h-16 w-16" />
+        <Icon aria-label={alt} className="h-16 w-16" style={{ color: iconColor }} />
       ) : null}
       {label && (
         <h5 className={`pt-2 text-center text-sm font-bold ${variant === 'filled' ? 'text-white' : ''}`}>

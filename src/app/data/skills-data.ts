@@ -85,6 +85,7 @@ export type SkillItem = {
   subtitleKey: string
   label?: string
   labelKey?: string
+  iconColor?: string
   imageClassName?: string
   variant?: 'bordered' | 'plain' | 'filled'
 }
@@ -109,9 +110,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: bootstrap, alt: 'Bootstrap', subtitleKey: 'bootstrapSubtitle', label: 'Bootstrap', imageClassName: 'w-[60%] mx-auto pt-5' },
       { icon: materialUi, alt: 'Material UI', subtitleKey: 'materialUiSubtitle', label: 'Material UI', imageClassName: 'w-[60%] mx-auto pt-5' },
       { icon: materialDesign, alt: 'Material Design', subtitleKey: 'materialDesignSubtitle', label: 'Material Design', imageClassName: 'w-[50%] mx-auto pt-2' },
-      { Icon: TbBrain, alt: 'Zustand', subtitleKey: 'zustandSubtitle', label: 'Zustand' },
-      { Icon: TbBrain, alt: 'Context API', subtitleKey: 'contextApiSubtitle', label: 'Context API' },
-      { Icon: SiReactquery, alt: 'React Query', subtitleKey: 'reactQuerySubtitle', label: 'React Query' },
+      { Icon: TbBrain, alt: 'Zustand', subtitleKey: 'zustandSubtitle', label: 'Zustand', iconColor: '#443E38' },
+      { Icon: TbBrain, alt: 'Context API', subtitleKey: 'contextApiSubtitle', label: 'Context API', iconColor: '#61DAFB' },
+      { Icon: SiReactquery, alt: 'React Query', subtitleKey: 'reactQuerySubtitle', label: 'React Query', iconColor: '#FF4154' },
     ],
   },
   {
@@ -126,7 +127,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: mongooseIcon, alt: 'Mongoose', subtitleKey: 'mongooseSubtitle', imageClassName: 'w-full mx-auto pt-7' },
       { icon: firebaseIcon, alt: 'Firebase', subtitleKey: 'firebaseSubtitle', imageClassName: 'w-full mx-auto pt-8' },
       { icon: hibernateIcon, alt: 'Hibernate', subtitleKey: 'hibernateSubtitle', imageClassName: 'w-full mx-auto pt-8' },
-      { Icon: SiRedis, alt: 'Redis', subtitleKey: 'redisSubtitle', label: 'Redis' },
+      { Icon: SiRedis, alt: 'Redis', subtitleKey: 'redisSubtitle', label: 'Redis', iconColor: '#DC382D' },
     ],
   },
   {
@@ -137,18 +138,18 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: expressIcon, alt: 'Express', subtitleKey: 'expressSubtitle', imageClassName: 'w-full mx-auto pt-8' },
       { icon: nestJsIcon, alt: 'NestJS', subtitleKey: 'nestjsSubtitle', imageClassName: 'w-full mx-auto pt-8' },
       { icon: javaIcon, alt: 'Java', subtitleKey: 'javaSubtitle', imageClassName: 'w-[50%] mx-auto' },
-      { Icon: SiSpringboot, alt: 'Spring Boot', subtitleKey: 'springBootSubtitle', label: 'Spring Boot' },
-      { Icon: TbPlugConnected, alt: 'WebSockets', subtitleKey: 'webSocketsSubtitle', label: 'WebSockets' },
-      { Icon: SiSocketdotio, alt: 'Socket.IO', subtitleKey: 'socketIoSubtitle', label: 'Socket.IO' },
-      { Icon: SiGraphql, alt: 'GraphQL', subtitleKey: 'graphQlSubtitle', label: 'GraphQL' },
+      { Icon: SiSpringboot, alt: 'Spring Boot', subtitleKey: 'springBootSubtitle', label: 'Spring Boot', iconColor: '#6DB33F' },
+      { Icon: TbPlugConnected, alt: 'WebSockets', subtitleKey: 'webSocketsSubtitle', label: 'WebSockets', iconColor: '#7C3AED' },
+      { Icon: SiSocketdotio, alt: 'Socket.IO', subtitleKey: 'socketIoSubtitle', label: 'Socket.IO', iconColor: '#010101' },
+      { Icon: SiGraphql, alt: 'GraphQL', subtitleKey: 'graphQlSubtitle', label: 'GraphQL', iconColor: '#E10098' },
     ],
   },
   {
     titleKey: 'mobileDevTitle',
     skills: [
       { icon: reactNativeIcon, alt: 'React Native', subtitleKey: 'reactNativeSubtitle', imageClassName: 'w-full mx-auto' },
-      { Icon: SiExpo, alt: 'Expo', subtitleKey: 'expoSubtitle', label: 'Expo' },
-      { Icon: TbRoute, alt: 'React Navigation', subtitleKey: 'reactNavigationSubtitle', label: 'React Navigation' },
+      { Icon: SiExpo, alt: 'Expo', subtitleKey: 'expoSubtitle', label: 'Expo', iconColor: '#000020' },
+      { Icon: TbRoute, alt: 'React Navigation', subtitleKey: 'reactNavigationSubtitle', label: 'React Navigation', iconColor: '#61DAFB' },
     ],
   },
   {
@@ -182,20 +183,20 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: jenkinsIcon, alt: 'Jenkins', subtitleKey: 'jenkinsSubtitle', imageClassName: 'w-[60%] mx-auto pt-4' },
       { icon: kubernetesIcon, alt: 'Kubernetes', subtitleKey: 'kubernetesSubtitle', imageClassName: 'w-[60%] mx-auto pt-4' },
       { icon: rancherIcon, alt: 'Rancher', subtitleKey: 'rancherSubtitle', imageClassName: 'w-[60%] mx-auto pt-6' },
-      { Icon: RiOpenaiFill, alt: 'OpenAI API', subtitleKey: 'openaiApiSubtitle', label: 'OpenAI API' },
-      { Icon: SiGooglegemini, alt: 'Gemini', subtitleKey: 'geminiSubtitle', label: 'Gemini' },
-      { Icon: SiAnthropic, alt: 'Claude', subtitleKey: 'claudeSubtitle', label: 'Claude' },
-      { Icon: SiApachekafka, alt: 'Apache Kafka', subtitleKey: 'kafkaSubtitle', label: 'Apache Kafka' },
-      { Icon: SiRabbitmq, alt: 'RabbitMQ', subtitleKey: 'rabbitMqSubtitle', label: 'RabbitMQ' },
-      { Icon: SiGithubactions, alt: 'GitHub Actions', subtitleKey: 'githubActionsSubtitle', label: 'GitHub Actions' },
-      { Icon: SiGitlab, alt: 'GitLab CI', subtitleKey: 'gitlabCiSubtitle', label: 'GitLab CI' },
-      { Icon: SiCypress, alt: 'Cypress', subtitleKey: 'cypressSubtitle', label: 'Cypress' },
-      { Icon: TbMasksTheater, alt: 'Playwright', subtitleKey: 'playwrightSubtitle', label: 'Playwright' },
-      { Icon: SiTestinglibrary, alt: 'React Testing Library', subtitleKey: 'testingLibrarySubtitle', label: 'React Testing Library' },
-      { Icon: SiDatadog, alt: 'Datadog', subtitleKey: 'datadogSubtitle', label: 'Datadog' },
-      { Icon: SiPrometheus, alt: 'Prometheus', subtitleKey: 'prometheusSubtitle', label: 'Prometheus' },
-      { Icon: SiGrafana, alt: 'Grafana', subtitleKey: 'grafanaSubtitle', label: 'Grafana' },
-      { Icon: SiRender, alt: 'Render', subtitleKey: 'renderSubtitle', label: 'Render' },
+      { Icon: RiOpenaiFill, alt: 'OpenAI API', subtitleKey: 'openaiApiSubtitle', label: 'OpenAI API', iconColor: '#10A37F' },
+      { Icon: SiGooglegemini, alt: 'Gemini', subtitleKey: 'geminiSubtitle', label: 'Gemini', iconColor: '#4285F4' },
+      { Icon: SiAnthropic, alt: 'Claude', subtitleKey: 'claudeSubtitle', label: 'Claude', iconColor: '#D97757' },
+      { Icon: SiApachekafka, alt: 'Apache Kafka', subtitleKey: 'kafkaSubtitle', label: 'Apache Kafka', iconColor: '#231F20' },
+      { Icon: SiRabbitmq, alt: 'RabbitMQ', subtitleKey: 'rabbitMqSubtitle', label: 'RabbitMQ', iconColor: '#FF6600' },
+      { Icon: SiGithubactions, alt: 'GitHub Actions', subtitleKey: 'githubActionsSubtitle', label: 'GitHub Actions', iconColor: '#2088FF' },
+      { Icon: SiGitlab, alt: 'GitLab CI', subtitleKey: 'gitlabCiSubtitle', label: 'GitLab CI', iconColor: '#FC6D26' },
+      { Icon: SiCypress, alt: 'Cypress', subtitleKey: 'cypressSubtitle', label: 'Cypress', iconColor: '#17202C' },
+      { Icon: TbMasksTheater, alt: 'Playwright', subtitleKey: 'playwrightSubtitle', label: 'Playwright', iconColor: '#2EAD33' },
+      { Icon: SiTestinglibrary, alt: 'React Testing Library', subtitleKey: 'testingLibrarySubtitle', label: 'React Testing Library', iconColor: '#E33332' },
+      { Icon: SiDatadog, alt: 'Datadog', subtitleKey: 'datadogSubtitle', label: 'Datadog', iconColor: '#632CA6' },
+      { Icon: SiPrometheus, alt: 'Prometheus', subtitleKey: 'prometheusSubtitle', label: 'Prometheus', iconColor: '#E6522C' },
+      { Icon: SiGrafana, alt: 'Grafana', subtitleKey: 'grafanaSubtitle', label: 'Grafana', iconColor: '#F46800' },
+      { Icon: SiRender, alt: 'Render', subtitleKey: 'renderSubtitle', label: 'Render', iconColor: '#46E3B7' },
     ],
   },
 ]
