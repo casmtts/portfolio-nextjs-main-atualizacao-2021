@@ -1,4 +1,27 @@
 import { StaticImageData } from 'next/image'
+import { IconType } from 'react-icons'
+import {
+  SiApachekafka,
+  SiAnthropic,
+  SiCypress,
+  SiDatadog,
+  SiExpo,
+  SiGithubactions,
+  SiGitlab,
+  SiGooglegemini,
+  SiGrafana,
+  SiGraphql,
+  SiPrometheus,
+  SiRabbitmq,
+  SiReactquery,
+  SiRedis,
+  SiRender,
+  SiSocketdotio,
+  SiSpringboot,
+  SiTestinglibrary,
+} from 'react-icons/si'
+import { RiOpenaiFill } from 'react-icons/ri'
+import { TbBrain, TbMasksTheater, TbPlugConnected, TbRoute } from 'react-icons/tb'
 
 import acessibilidadeIcon from '../../../public/images/acessibilidade.png'
 import ansibleIcon from '../../../public/images/Ansible_logo.svg'
@@ -56,7 +79,8 @@ import vercelIcon from '../../../public/images/vercel.webp'
 import yarnIcon from '../../../public/images/yarn.webp'
 
 export type SkillItem = {
-  icon: StaticImageData
+  icon?: StaticImageData
+  Icon?: IconType
   alt: string
   subtitleKey: string
   label?: string
@@ -85,6 +109,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: bootstrap, alt: 'Bootstrap', subtitleKey: 'bootstrapSubtitle', label: 'Bootstrap', imageClassName: 'w-[60%] mx-auto pt-5' },
       { icon: materialUi, alt: 'Material UI', subtitleKey: 'materialUiSubtitle', label: 'Material UI', imageClassName: 'w-[60%] mx-auto pt-5' },
       { icon: materialDesign, alt: 'Material Design', subtitleKey: 'materialDesignSubtitle', label: 'Material Design', imageClassName: 'w-[50%] mx-auto pt-2' },
+      { Icon: TbBrain, alt: 'Zustand', subtitleKey: 'zustandSubtitle', label: 'Zustand' },
+      { Icon: TbBrain, alt: 'Context API', subtitleKey: 'contextApiSubtitle', label: 'Context API' },
+      { Icon: SiReactquery, alt: 'React Query', subtitleKey: 'reactQuerySubtitle', label: 'React Query' },
     ],
   },
   {
@@ -99,6 +126,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: mongooseIcon, alt: 'Mongoose', subtitleKey: 'mongooseSubtitle', imageClassName: 'w-full mx-auto pt-7' },
       { icon: firebaseIcon, alt: 'Firebase', subtitleKey: 'firebaseSubtitle', imageClassName: 'w-full mx-auto pt-8' },
       { icon: hibernateIcon, alt: 'Hibernate', subtitleKey: 'hibernateSubtitle', imageClassName: 'w-full mx-auto pt-8' },
+      { Icon: SiRedis, alt: 'Redis', subtitleKey: 'redisSubtitle', label: 'Redis' },
     ],
   },
   {
@@ -109,12 +137,18 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: expressIcon, alt: 'Express', subtitleKey: 'expressSubtitle', imageClassName: 'w-full mx-auto pt-8' },
       { icon: nestJsIcon, alt: 'NestJS', subtitleKey: 'nestjsSubtitle', imageClassName: 'w-full mx-auto pt-8' },
       { icon: javaIcon, alt: 'Java', subtitleKey: 'javaSubtitle', imageClassName: 'w-[50%] mx-auto' },
+      { Icon: SiSpringboot, alt: 'Spring Boot', subtitleKey: 'springBootSubtitle', label: 'Spring Boot' },
+      { Icon: TbPlugConnected, alt: 'WebSockets', subtitleKey: 'webSocketsSubtitle', label: 'WebSockets' },
+      { Icon: SiSocketdotio, alt: 'Socket.IO', subtitleKey: 'socketIoSubtitle', label: 'Socket.IO' },
+      { Icon: SiGraphql, alt: 'GraphQL', subtitleKey: 'graphQlSubtitle', label: 'GraphQL' },
     ],
   },
   {
     titleKey: 'mobileDevTitle',
     skills: [
       { icon: reactNativeIcon, alt: 'React Native', subtitleKey: 'reactNativeSubtitle', imageClassName: 'w-full mx-auto' },
+      { Icon: SiExpo, alt: 'Expo', subtitleKey: 'expoSubtitle', label: 'Expo' },
+      { Icon: TbRoute, alt: 'React Navigation', subtitleKey: 'reactNavigationSubtitle', label: 'React Navigation' },
     ],
   },
   {
@@ -148,6 +182,20 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: jenkinsIcon, alt: 'Jenkins', subtitleKey: 'jenkinsSubtitle', imageClassName: 'w-[60%] mx-auto pt-4' },
       { icon: kubernetesIcon, alt: 'Kubernetes', subtitleKey: 'kubernetesSubtitle', imageClassName: 'w-[60%] mx-auto pt-4' },
       { icon: rancherIcon, alt: 'Rancher', subtitleKey: 'rancherSubtitle', imageClassName: 'w-[60%] mx-auto pt-6' },
+      { Icon: RiOpenaiFill, alt: 'OpenAI API', subtitleKey: 'openaiApiSubtitle', label: 'OpenAI API' },
+      { Icon: SiGooglegemini, alt: 'Gemini', subtitleKey: 'geminiSubtitle', label: 'Gemini' },
+      { Icon: SiAnthropic, alt: 'Claude', subtitleKey: 'claudeSubtitle', label: 'Claude' },
+      { Icon: SiApachekafka, alt: 'Apache Kafka', subtitleKey: 'kafkaSubtitle', label: 'Apache Kafka' },
+      { Icon: SiRabbitmq, alt: 'RabbitMQ', subtitleKey: 'rabbitMqSubtitle', label: 'RabbitMQ' },
+      { Icon: SiGithubactions, alt: 'GitHub Actions', subtitleKey: 'githubActionsSubtitle', label: 'GitHub Actions' },
+      { Icon: SiGitlab, alt: 'GitLab CI', subtitleKey: 'gitlabCiSubtitle', label: 'GitLab CI' },
+      { Icon: SiCypress, alt: 'Cypress', subtitleKey: 'cypressSubtitle', label: 'Cypress' },
+      { Icon: TbMasksTheater, alt: 'Playwright', subtitleKey: 'playwrightSubtitle', label: 'Playwright' },
+      { Icon: SiTestinglibrary, alt: 'React Testing Library', subtitleKey: 'testingLibrarySubtitle', label: 'React Testing Library' },
+      { Icon: SiDatadog, alt: 'Datadog', subtitleKey: 'datadogSubtitle', label: 'Datadog' },
+      { Icon: SiPrometheus, alt: 'Prometheus', subtitleKey: 'prometheusSubtitle', label: 'Prometheus' },
+      { Icon: SiGrafana, alt: 'Grafana', subtitleKey: 'grafanaSubtitle', label: 'Grafana' },
+      { Icon: SiRender, alt: 'Render', subtitleKey: 'renderSubtitle', label: 'Render' },
     ],
   },
 ]

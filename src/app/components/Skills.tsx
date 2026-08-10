@@ -15,7 +15,7 @@ export default function Skills() {
             <h3 id={`skill-${category.titleKey}`} className="section-subtitle">{t(category.titleKey)}</h3>
             <div className="skill-grid">
               {category.skills.map((skill) => (
-                <SkillIcon key={skill.alt} src={skill.icon} alt={skill.alt} title={t(skill.subtitleKey)} label={skill.labelKey ? t(skill.labelKey) : skill.label} imageClassName={skill.imageClassName} variant={skill.variant} />
+                <SkillIcon key={skill.alt} src={skill.icon} Icon={skill.Icon} alt={skill.alt} title={t(skill.subtitleKey)} label={skill.labelKey ? t(skill.labelKey) : skill.label} imageClassName={skill.imageClassName} variant={skill.variant} />
               ))}
             </div>
           </section>

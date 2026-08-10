@@ -1,9 +1,11 @@
 'use client'
 
 import Image, { StaticImageData } from 'next/image'
+import { IconType } from 'react-icons'
 
 type SkillIconProps = {
-  src: StaticImageData
+  src?: StaticImageData
+  Icon?: IconType
   alt: string
   title: string
   label?: string
@@ -13,6 +15,7 @@ type SkillIconProps = {
 
 export default function SkillIcon({
   src,
+  Icon,
   alt,
   title,
   label,
@@ -30,7 +33,11 @@ export default function SkillIcon({
 
   return (
     <div className={`${baseClasses} ${variantClasses[variant]}`} title={title}>
-      <Image src={src} alt={alt} className={imageClassName} />
+      {src ? (
+        <Image src={src} alt={alt} className={imageClassName} />
+      ) : Icon ? (
+        <Icon aria-label={alt} className="h-16 w-16" />
+      ) : null}
       {label && (
         <h5 className={`pt-2 text-center text-sm font-bold ${variant === 'filled' ? 'text-white' : ''}`}>
           {label}
