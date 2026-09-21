@@ -207,7 +207,7 @@
 #profile h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
 #profile > div:first-child > p:not(.eyebrow) { font-size: 1rem; line-height: 1.65; }
 #profile dl > div:last-child { border: 1px solid var(--accent); border-radius: .5rem; padding: .75rem; background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
-#profile dl > div:last-child dd { max-width: none; white-space: nowrap; }
+#profile dl > div:last-child dd { max-width: none; white-space: normal; overflow-wrap: anywhere; }
 #profile > div:last-child .site-card { max-width: 20rem; }
 #profile > div:first-child { animation: profile-rise 700ms cubic-bezier(.22, 1, .36, 1) both; }
 #profile > div:last-child { animation: profile-float 5s ease-in-out 500ms infinite; }
