@@ -5,8 +5,20 @@ import { getMessages } from 'next-intl/server';
 import notFound from '../not-found';
 
 export const metadata: Metadata = {
-  title: 'CALIL SOUSA MATTOS | WEBSITE | PORTFOLIO',
-  description: 'CALIL SOUSA MATTOS | WEBSITE | PORTFOLIO',
+  title: {
+    default: 'Calil Sousa Mattos — Software Developer',
+    template: '%s | Calil Sousa Mattos',
+  },
+  description: 'Portfólio de Calil Sousa Mattos: desenvolvimento full stack, aplicações web, mobile e práticas DevSecOps.',
+  authors: [{ name: 'Calil Sousa Mattos' }],
+  creator: 'Calil Sousa Mattos',
+  openGraph: {
+    type: 'website',
+    title: 'Calil Sousa Mattos — Software Developer',
+    description: 'Desenvolvimento full stack, mobile e DevSecOps.',
+    siteName: 'Calil Sousa Mattos',
+  },
+  robots: { index: true, follow: true },
 }
 
 export default async function LocaleLayout({

@@ -25,26 +25,39 @@ export default function SkillIcon({
   variant = 'bordered',
 }: SkillIconProps) {
   const baseClasses =
-    'flex aspect-square w-full max-w-[10rem] flex-col items-center justify-center transition-transform hover:scale-105 focus-within:scale-105'
+    'site-card flex aspect-square w-full max-w-[10rem] flex-col items-center justify-center border p-3 transition-colors hover:border-[var(--accent)] hover:bg-[var(--surface-raised)] focus-within:border-[var(--accent)]'
 
   const variantClasses = {
-    bordered: 'border-2 border-gray-200 rounded-lg',
-    plain: '',
-    filled: 'rounded-lg bg-[#147bac]',
+    bordered: '',
+    plain: 'overflow-hidden p-0',
+    filled: 'bg-[var(--surface-raised)]',
   }
 
   return (
-    <div className={`${baseClasses} ${variantClasses[variant]}`} title={title}>
+    <div
+      className={`group/skill relative ${baseClasses} ${variantClasses[variant]}`}
+      title={title}
+      tabIndex={0}
+      aria-label={`${alt}: ${title}`}
+    >
       {src ? (
-        <Image src={src} alt={alt} className={imageClassName} />
+        <Image src={src} alt={alt} className={`${imageClassName} ${variant === 'plain' ? 'h-full object-contain' : ''}`} />
       ) : Icon ? (
         <Icon aria-label={alt} className="h-16 w-16" style={{ color: iconColor }} />
       ) : null}
       {label && (
-        <h5 className={`pt-2 text-center text-sm font-bold ${variant === 'filled' ? 'text-white' : ''}`}>
+        <h5 className="site-heading pt-2 text-center font-mono text-xs font-bold">
           {label}
         </h5>
       )}
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute bottom-[calc(100%+0.65rem)] left-1/2 z-20 w-56 -translate-x-1/2 translate-y-1 opacity-0 transition duration-200 group-hover/skill:translate-y-0 group-hover/skill:opacity-100 group-focus/skill:translate-y-0 group-focus/skill:opacity-100"
+      >
+        <span className="site-card block rounded-md border px-3 py-2 text-left font-sans text-xs leading-5 shadow-xl shadow-black/20">
+          {title}
+        </span>
+      </span>
     </div>
   )
 }

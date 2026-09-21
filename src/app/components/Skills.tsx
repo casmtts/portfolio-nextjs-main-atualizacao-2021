@@ -9,12 +9,12 @@ export default function Skills() {
   return (
     <section id="skills" className="content-section scroll-mt-20" aria-labelledby="skills-title">
       <h2 id="skills-title" className="section-title">{t('title')}</h2>
-      <div className="space-y-12">
+      <div className="skills-sections space-y-16">
         {SKILL_CATEGORIES.map((category) => (
           <section key={category.titleKey} aria-labelledby={`skill-${category.titleKey}`}>
             <h3 id={`skill-${category.titleKey}`} className="section-subtitle">{t(category.titleKey)}</h3>
             <div className="skill-grid">
-              {category.skills.map((skill) => (
+              {category.skills.slice(0, category.titleKey === 'relatedTechTitle' ? 12 : category.titleKey === 'frontEndTitle' ? 8 : 6).map((skill) => (
                 <SkillIcon key={skill.alt} src={skill.icon} Icon={skill.Icon} alt={skill.alt} title={t(skill.subtitleKey)} label={skill.labelKey ? t(skill.labelKey) : skill.label} iconColor={skill.iconColor} imageClassName={skill.imageClassName} variant={skill.variant} />
               ))}
             </div>
