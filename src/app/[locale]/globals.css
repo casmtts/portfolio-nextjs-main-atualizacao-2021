@@ -177,6 +177,8 @@
   .portfolio-copy a { line-height: 1.5; white-space: normal; }
   .services-grid { grid-template-columns: 1fr; }
   .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+  .skill-grid [role='tooltip'] { position: fixed; top: 8.5rem; right: 1rem; left: 1rem; width: auto; transform: translateY(-1rem) !important; }
+  .skill-grid .group\/skill:hover [role='tooltip'], .skill-grid .group\/skill:focus [role='tooltip'] { transform: translateY(0) !important; }
   .site-card { min-width: 0; }
   #profile { gap: 2.5rem; padding: 3rem 1rem; }
   #profile h1 { font-size: clamp(2.15rem, 10vw, 3rem); line-height: 1.04; }
