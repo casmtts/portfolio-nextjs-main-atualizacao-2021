@@ -26,16 +26,16 @@ export default function Navbar() {
     return () => { observer.disconnect(); window.removeEventListener('hashchange', onHashChange) }
   }, [])
   return <>
-  <header className="site-sidebar z-50 border-r" aria-label="Navegação principal">
+  <header className="site-sidebar z-50 border-r" aria-label={t('primaryNavigation')}>
     <div className="site-sidebar-inner">
-      <a href="#profile" className="site-brand focus-ring nav-rail-mark" aria-label="CSM — início">
+      <a href="#profile" className="site-brand focus-ring nav-rail-mark" aria-label={t('homeLabel')}>
         <span className="nav-mark">CSM</span>
       </a>
-      <nav className="site-sidebar-nav" aria-label="Navegação principal">
+      <nav className="site-sidebar-nav" aria-label={t('primaryNavigation')}>
         {links.map(([id, label, Icon]) => <a key={id} href={`#${id}`} onClick={() => setActiveId(id)} className={`nav-rail-link focus-ring ${activeId === id ? 'is-active' : ''}`} title={t(label)}><Icon aria-hidden="true" /><span className="nav-tooltip">{t(label)}</span></a>)}
       </nav>
       <div className="site-sidebar-actions"><a href="https://github.com/casmtts" target="_blank" rel="noreferrer" className="nav-rail-link" title="GitHub"><MdTerminal /><span className="nav-tooltip">GitHub</span></a><a href="https://www.linkedin.com/in/calil-mattos-programador/" target="_blank" rel="noreferrer" className="nav-rail-link" title="LinkedIn"><MdShare /><span className="nav-tooltip">LinkedIn</span></a><a href="mailto:contatocsmpm@gmail.com" className="nav-rail-link" title="Email"><MdAlternateEmail /><span className="nav-tooltip">Email</span></a></div>
     </div>
-  </header><div className="site-topbar z-40"><div className="site-topbar-brand"><span className="font-semibold">Calil Mattos</span><span className="site-status"><span />Disponível para projetos</span></div><div className="site-topbar-actions"><nav className="site-language" aria-label="Idioma"><LocaleLink href="/" locale="pt" aria-label="Português" className={locale === 'pt' ? 'is-selected' : ''}>PT</LocaleLink><LocaleLink href="/" locale="en" aria-label="English" className={locale === 'en' ? 'is-selected' : ''}>EN</LocaleLink></nav><ThemeToggle /><DropdownCV /></div></div>
+  </header><div className="site-topbar z-40"><div className="site-topbar-brand"><span className="font-semibold">Calil Mattos</span><span className="site-status"><span />{t('availabilityStatus')}</span></div><div className="site-topbar-actions"><nav className="site-language" aria-label={t('languageLabel')}><LocaleLink href="/" locale="pt" aria-label={t('portugueseLabel')} className={locale === 'pt' ? 'is-selected' : ''}>PT</LocaleLink><LocaleLink href="/" locale="en" aria-label="English" className={locale === 'en' ? 'is-selected' : ''}>EN</LocaleLink></nav><ThemeToggle /><DropdownCV /></div></div>
   </>
 }

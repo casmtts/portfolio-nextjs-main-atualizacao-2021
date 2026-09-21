@@ -15,6 +15,11 @@
     "profileAlt": "Foto de perfil de Calil Sousa Mattos"
   },
   "Navbar": {
+    "availabilityStatus": "Disponível para projetos",
+    "primaryNavigation": "Navegação principal",
+    "homeLabel": "CSM — início",
+    "languageLabel": "Idioma",
+    "portugueseLabel": "Português",
     "profileTitle": "Perfil",
     "servicesTitle": "Serviços",
     "skillsTitle": "Habilidades",
