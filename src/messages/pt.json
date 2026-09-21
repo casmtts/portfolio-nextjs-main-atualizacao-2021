@@ -26,7 +26,9 @@
   },
   "PortfolioPage": {
     "title": "Portfólio",
+    "selectedLabel": "TRABALHOS SELECIONADOS",
     "eyebrow": "Alguns projetos ao longo dos anos",
+    "repositoriesLink": "Ver todos os repositórios",
     "intro": "Uma seleção de projetos desenvolvidos ao longo desses anos, combinando produto, engenharia e atenção aos detalhes da experiência.",
     "close": "Fechar",
     "freteRapidoTitle": "Site Super Frete Rápido",

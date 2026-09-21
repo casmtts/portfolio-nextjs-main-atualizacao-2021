@@ -26,7 +26,9 @@
   },
   "PortfolioPage": {
     "title": "Portfolio",
+    "selectedLabel": "SELECTED WORK",
     "eyebrow": "A few projects over the years",
+    "repositoriesLink": "View all repositories",
     "intro": "A selection of projects built over the years, combining product thinking, engineering, and attention to experience details.",
     "close": "Close",
     "freteRapidoTitle": "Super Frete Rápido Website",
@@ -34,7 +36,7 @@
     "cryptoWalletTitle": "Crypto Wallet App",
     "appGestaoTitle": "Management App",
     "odontoCareTitle": "OdontoCare-System",
-    "samTitle": "Municipal Supply System",
+    "samTitle": "Municipal Medicine Supply System",
     "artworkFiguresTitle": "Artwork Figures E-commerce",
     "ecommerceVegaTitle": "Vega Shop E-commerce",
     "multiInvestTitle": "Multi Invest Landing Page",

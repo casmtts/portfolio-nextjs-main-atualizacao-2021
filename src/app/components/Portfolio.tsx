@@ -12,7 +12,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="content-section scroll-mt-20" aria-labelledby="portfolio-title">
-      <div className="portfolio-heading mb-10 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div className="min-w-0"><p className="eyebrow">TRABALHOS SELECIONADOS</p><h2 id="portfolio-title" className="section-title mb-0 mt-2">{t('eyebrow')}</h2></div><div className="portfolio-copy max-w-md"><p className="site-muted text-sm leading-6">{t('intro')}</p><a href="https://github.com/casmtts?tab=repositories" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex font-mono text-xs uppercase tracking-[0.12em] text-[var(--accent)] hover:underline">Ver todos os repositórios <span className="ml-2" aria-hidden="true">→</span></a></div></div>
+      <div className="portfolio-heading mb-10 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div className="min-w-0"><p className="eyebrow">{t('selectedLabel')}</p><h2 id="portfolio-title" className="section-title mb-0 mt-2">{t('eyebrow')}</h2></div><div className="portfolio-copy max-w-md"><p className="site-muted text-sm leading-6">{t('intro')}</p><a href="https://github.com/casmtts?tab=repositories" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex font-mono text-xs uppercase tracking-[0.12em] text-[var(--accent)] hover:underline">{t('repositoriesLink')} <span className="ml-2" aria-hidden="true">→</span></a></div></div>
       <div className="portfolio-grid">
         {PORTFOLIO_ITEMS.map((item) => (
           <PortfolioCard
