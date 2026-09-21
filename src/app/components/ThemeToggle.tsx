@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 export default function ThemeToggle() {
   const t = useTranslations('Navbar')
+  const locale = useLocale()
   const [isLight, setIsLight] = useState(true)
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function ThemeToggle() {
       aria-label={isLight ? t('activateDark') : t('activateLight')}
       title={isLight ? t('darkMode') : t('lightMode')}
     >
-      <span aria-hidden="true" className="font-semibold">{isLight ? 'D' : 'L'}</span>
+      <span aria-hidden="true" className="font-semibold">{isLight ? (locale === 'pt' ? 'E' : 'D') : (locale === 'pt' ? 'C' : 'L')}</span>
       <span className="hidden sm:inline">{isLight ? t('darkMode') : t('lightMode')}</span>
     </button>
   )
