@@ -45,7 +45,7 @@ export default function Example() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <MenuItems className="absolute z-10 mt-2 w-[8rem] origin-top-right divide-y divide-[var(--line)] rounded-md bg-[var(--surface)] shadow-lg ring-1 ring-black/10 focus:outline-none">
+        <MenuItems className="absolute right-0 z-10 mt-2 w-[8rem] max-w-[calc(100vw-1.5rem)] origin-top-right divide-y divide-[var(--line)] rounded-md bg-[var(--surface)] shadow-lg ring-1 ring-black/10 focus:outline-none">
           <div className="py-1">
             {/* Curriculum */}
             <MenuItem>
