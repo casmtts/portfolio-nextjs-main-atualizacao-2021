@@ -30,6 +30,7 @@ export default function PortfolioModal({
   children,
 }: PortfolioModalProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!isOpen) return
@@ -37,6 +38,13 @@ export default function PortfolioModal({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         onClose()
+      }
+      if (event.key === 'Tab' && dialogRef.current) {
+        const focusable = dialogRef.current.querySelectorAll<HTMLElement>('button, a[href], [tabindex]:not([tabindex="-1"])')
+        const first = focusable[0]
+        const last = focusable[focusable.length - 1]
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus() }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus() }
       }
     }
 
@@ -65,7 +73,7 @@ export default function PortfolioModal({
         aria-modal="true"
         aria-labelledby="portfolio-modal-title"
       >
-        <div className={`relative mx-auto my-8 w-full bg-white shadow-xl ${variant === 'legacy' ? 'max-w-5xl' : 'max-w-4xl rounded-lg xl:max-w-5xl 2xl:max-w-6xl'}`}>
+        <div ref={dialogRef} className={`relative mx-auto my-8 w-full bg-white shadow-xl ${variant === 'legacy' ? 'max-w-5xl' : 'max-w-4xl rounded-lg xl:max-w-5xl 2xl:max-w-6xl'}`}>
           <div className="flex flex-col">
             <div className={`flex justify-end ${variant === 'legacy' ? 'border-b border-gray-200 p-5' : 'p-4'}`}>
               <button

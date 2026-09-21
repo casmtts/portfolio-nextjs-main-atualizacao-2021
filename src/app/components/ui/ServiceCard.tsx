@@ -1,7 +1,6 @@
 'use client'
 
 import Image, { StaticImageData } from 'next/image'
-import { mohaveLight } from '../../fonts'
 
 type ServiceCardProps = {
   icon: StaticImageData
@@ -21,18 +20,16 @@ export default function ServiceCard({
   iconHeight = 150,
 }: ServiceCardProps) {
   return (
-    <article className="flex min-h-[24rem] flex-col items-center rounded-lg bg-white p-6 shadow-sm transition-shadow hover:shadow-md lg:min-h-[28rem]">
+    <article className="site-card group flex min-h-[25rem] flex-col border p-8 transition-colors hover:border-[var(--accent)] hover:bg-[var(--surface-raised)]">
       <Image
-        className="mx-auto pt-4"
+        className="mx-auto h-24 w-24 object-contain"
         src={icon}
         alt={iconAlt}
         width={iconWidth}
         height={iconHeight}
       />
-      <h3 className="mt-5 text-center text-base font-bold xs:text-lg">{title}</h3>
-      <div className={mohaveLight.className}>
-        <p className="mt-4 text-justify text-sm xs:text-base">{description}</p>
-      </div>
+      <h3 className="site-heading mt-7 text-center text-base font-semibold xs:text-lg">{title}</h3>
+      <p className="site-muted mt-3 text-center text-sm leading-6 xs:text-base">{description}</p>
     </article>
   )
 }

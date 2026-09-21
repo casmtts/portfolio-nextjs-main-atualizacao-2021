@@ -1,23 +1,39 @@
 {
   "ProfilePage": {
     "position": "Desenvolvedor de Software",
-    "description": "Crio produtos digitais, como sistemas, lojas virtuais, landing pages, sites e aplicativos, com foco em experiências centradas nas pessoas."
+    "description": "Crio produtos digitais, como sistemas, lojas virtuais, landing pages, sites e aplicativos, com foco em experiências centradas nas pessoas.",
+    "heroTitle": "Construo produtos digitais que fazem sentido para pessoas.",
+    "focusLabel": "Foco",
+    "focusValue": "Full-stack",
+    "approachLabel": "Abordagem",
+    "approachValue": "User-centered",
+    "availabilityLabel": "Disponível para",
+    "availabilityValue": "CLT, PJ ou cooperado",
+    "projectsCta": "Ver projetos",
+    "contactCta": "Entrar em contato",
+    "profileAlt": "Foto de perfil de Calil Sousa Mattos"
   },
   "Navbar": {
     "profileTitle": "Perfil",
     "servicesTitle": "Serviços",
     "skillsTitle": "Habilidades",
     "portfolioTitle": "Portfolio",
-    "contactTitle": "Contato"
+    "contactTitle": "Contato",
+    "lightMode": "Claro",
+    "darkMode": "Escuro",
+    "activateLight": "Ativar modo claro",
+    "activateDark": "Ativar modo escuro"
   },
   "PortfolioPage": {
     "title": "Portfólio",
+    "eyebrow": "Alguns projetos ao longo dos anos",
+    "intro": "Uma seleção de projetos desenvolvidos ao longo desses anos, combinando produto, engenharia e atenção aos detalhes da experiência.",
     "close": "Fechar",
     "freteRapidoTitle": "Site Super Frete Rápido",
     "giroCertoTitle": "App Giro Certo",
     "cryptoWalletTitle": "App Crypto Wallet",
     "appGestaoTitle": "Aplicativo de Gestão",
-    "odontoCareTitle": "Sistema Odonto Care",
+    "odontoCareTitle": "OdontoCare-System",
     "samTitle": "Sistema Municipal de Abastecimento",
     "artworkFiguresTitle": "E-commerce Artwork Figures",
     "ecommerceVegaTitle": "E-commerce Vega Shop",
@@ -27,6 +43,9 @@
   },
   "ServicesPage": {
     "title": "Serviços",
+    "eyebrow": "ESPECIALIDADES",
+    "heading": "Serviços",
+    "intro": "Abordagem rigorosa e arquiteturas orientadas a padrões de desenvolvimento, estabilidade e segurança.",
     "frontEndTitle": "DESENVOLVEDOR FRONT-END",
     "frontEndDescription": "Atua desenvolvendo a interface (telas do aplicativo), toda a lógica de alto nível da aplicação como login, persistência de dados local, faz acesso aos endpoints que o webservice provê e mostra tudo ao usuário.",
     "backEndTitle": "DESENVOLVEDOR BACK-END",
@@ -141,7 +160,11 @@
     "description": "Oops! Parece que você se deparou com uma página que não existe. Não se preocupe, nossa mágica de internacionalização ainda está trabalhando duro em outras partes do aplicativo. Sinta-se livre para navegar de volta para explorar mais!"
   },
   "Contact": {
-    "getInContact": "Entre em contato:"
+    "getInContact": "Entre em contato:",
+    "eyebrow": "DISPONIBILIDADE IMEDIATA",
+    "heading": "Vamos construir algo incrível e escalável juntos?",
+    "intro": "Aberto a propostas de posições CLT, PJ ou cooperado no Brasil e exterior, além de projetos selecionados de desenvolvimento e consultoria DevSecOps.",
+    "emailCta": "Enviar e-mail"
   },
   "Footer": {
     "copyright": "© CSM SOLUÇÕES TECNOLÓGICAS E DESENVOLVIMENTO. Todos Direitos Reservados.",

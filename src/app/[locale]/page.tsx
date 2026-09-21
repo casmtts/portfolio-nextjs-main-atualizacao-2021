@@ -13,12 +13,14 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Profile />
-      <Services />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <main className="site-main-shell">
+        <Profile />
+        <Services />
+        <Skills />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </main>
     </>
 
   )
