@@ -29,7 +29,7 @@ export default function SkillIcon({
 
   const variantClasses = {
     bordered: '',
-    plain: 'overflow-hidden p-0',
+    plain: 'overflow-visible p-0',
     filled: 'bg-[var(--surface-raised)]',
   }
 
