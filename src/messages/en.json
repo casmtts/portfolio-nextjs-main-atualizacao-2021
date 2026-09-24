@@ -160,7 +160,23 @@
     "datadogSubtitle": "Datadog is an observability and application-monitoring platform.",
     "prometheusSubtitle": "Prometheus collects and stores metrics for system monitoring.",
     "grafanaSubtitle": "Grafana creates dashboards and visualizations from metrics and other data sources.",
-    "renderSubtitle": "Render is a cloud platform for publishing applications, services, and databases."
+    "renderSubtitle": "Render is a cloud platform for publishing applications, services, and databases.",
+    "styledComponentsSubtitle": "styled-components lets you write CSS inside React components using JavaScript.",
+    "reduxToolkitSubtitle": "Redux Toolkit simplifies store creation and state management with Redux.",
+    "mockitoSubtitle": "Mockito is a Java library for creating mock objects and testing components in isolation.",
+    "oauth2Subtitle": "OAuth 2.0 is an authorization protocol for granting limited access to protected resources.",
+    "jwtSubtitle": "JSON Web Tokens are used to transmit signed information between systems.",
+    "owaspSubtitle": "OWASP provides standards and resources for identifying and reducing application security risks.",
+    "cleanCodeSubtitle": "Clean Code describes practices for writing readable, simple, and maintainable code.",
+    "tddSubtitle": "Test-Driven Development guides software development through short testing and implementation cycles.",
+    "cicdSubtitle": "CI/CD automates software integration, validation, and delivery.",
+    "saasSubtitle": "SaaS and multitenant architecture provide a shared service to multiple customers.",
+    "microservicesSubtitle": "Microservices organize applications as smaller services that communicate through defined interfaces.",
+    "serverlessSubtitle": "Serverless runs services without directly managing the underlying servers.",
+    "agileSubtitle": "Scrum and Kanban are agile methods for planning and tracking team work.",
+    "metaApiSubtitle": "The Official Meta API connects applications to Meta platform services and channels.",
+    "paymentGatewaysSubtitle": "Payment gateways connect applications to payment processing services.",
+    "webhooksSubtitle": "Webhooks send HTTP notifications when events occur in a service."
 
 
   },

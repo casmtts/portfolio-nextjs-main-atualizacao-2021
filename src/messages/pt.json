@@ -160,7 +160,23 @@
     "datadogSubtitle": "Datadog é uma plataforma de observabilidade e monitoramento de aplicações.",
     "prometheusSubtitle": "Prometheus coleta e armazena métricas para monitoramento de sistemas.",
     "grafanaSubtitle": "Grafana cria painéis e visualizações a partir de métricas e outras fontes de dados.",
-    "renderSubtitle": "Render é uma plataforma em nuvem para publicar aplicações, serviços e bancos de dados."
+    "renderSubtitle": "Render é uma plataforma em nuvem para publicar aplicações, serviços e bancos de dados.",
+    "styledComponentsSubtitle": "styled-components permite escrever CSS dentro de componentes React usando JavaScript.",
+    "reduxToolkitSubtitle": "Redux Toolkit simplifica a criação de stores e o gerenciamento de estado com Redux.",
+    "mockitoSubtitle": "Mockito é uma biblioteca Java para criar objetos simulados e testar componentes isoladamente.",
+    "oauth2Subtitle": "OAuth 2.0 é um protocolo de autorização para conceder acesso limitado a recursos protegidos.",
+    "jwtSubtitle": "JSON Web Tokens são usados para transmitir informações assinadas entre sistemas.",
+    "owaspSubtitle": "OWASP reúne padrões e recursos para identificar e reduzir riscos de segurança em aplicações.",
+    "cleanCodeSubtitle": "Clean Code reúne práticas para escrever código legível, simples e fácil de manter.",
+    "tddSubtitle": "Test-Driven Development orienta o desenvolvimento por ciclos curtos de testes e implementação.",
+    "cicdSubtitle": "CI/CD automatiza integração, validação e entrega de alterações de software.",
+    "saasSubtitle": "SaaS e arquitetura multitenant permitem oferecer um serviço compartilhado a múltiplos clientes.",
+    "microservicesSubtitle": "Microsserviços organizam aplicações como serviços menores que se comunicam por interfaces definidas.",
+    "serverlessSubtitle": "Serverless permite executar serviços sem administrar diretamente os servidores subjacentes.",
+    "agileSubtitle": "Scrum e Kanban são métodos ágeis para planejar e acompanhar o trabalho de equipes.",
+    "metaApiSubtitle": "A API Oficial da Meta integra aplicações aos serviços e canais da plataforma Meta.",
+    "paymentGatewaysSubtitle": "Gateways de pagamento conectam aplicações a serviços de processamento de pagamentos.",
+    "webhooksSubtitle": "Webhooks enviam notificações HTTP quando eventos ocorrem em um serviço."
 
   },
   "NotFoundPage": {

@@ -72,6 +72,7 @@ import sequelizeIcon from '../../../public/images/sequelize.svg'
 import sonarQubeIcon from '../../../public/images/sonarqube.svg'
 import swaggerIcon from '../../../public/images/swagger.svg'
 import tailwindIcon from '../../../public/images/TailwindLogo.svg'
+import styledComponentsIcon from '../../../public/images/styled-components.svg'
 import typeormIcon from '../../../public/images/typeorm.svg'
 import typescriptIcon from '../../../public/images/typescript.svg'
 import usabilidadeIcon from '../../../public/images/usabilidade.png'
@@ -104,9 +105,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { icon: javascriptIcon, alt: 'JavaScript', subtitleKey: 'jsSubtitle', variant: 'plain', imageClassName: 'w-full mx-auto' },
       { icon: typescriptIcon, alt: 'TypeScript', subtitleKey: 'typescriptSubtitle', variant: 'plain', imageClassName: 'w-full mx-auto' },
       { icon: reduxIcon, alt: 'Redux', subtitleKey: 'reduxSubtitle', label: 'Redux', imageClassName: 'w-[50%] mx-auto pt-5' },
+      { icon: reduxIcon, alt: 'Redux Toolkit', subtitleKey: 'reduxToolkitSubtitle', label: 'Redux Toolkit', imageClassName: 'w-[50%] mx-auto pt-5' },
       { icon: reactIcon, alt: 'React', subtitleKey: 'reactSubtitle', label: 'React', imageClassName: 'w-[50%] mx-auto pt-7' },
       { icon: nextjsIcon, alt: 'Next.js', subtitleKey: 'nextjsSubtitle', imageClassName: 'w-[80%] mx-auto pt-8' },
       { icon: tailwindIcon, alt: 'Tailwind CSS', subtitleKey: 'tailwindSubtitle', imageClassName: 'w-[80%] mx-auto pt-8' },
+      { icon: styledComponentsIcon, alt: 'styled-components', subtitleKey: 'styledComponentsSubtitle', imageClassName: 'w-[90%] mx-auto pt-4' },
       { icon: bootstrap, alt: 'Bootstrap', subtitleKey: 'bootstrapSubtitle', label: 'Bootstrap', imageClassName: 'w-[60%] mx-auto pt-5' },
       { icon: materialUi, alt: 'Material UI', subtitleKey: 'materialUiSubtitle', label: 'Material UI', imageClassName: 'w-[60%] mx-auto pt-5' },
       { icon: materialDesign, alt: 'Material Design', subtitleKey: 'materialDesignSubtitle', label: 'Material Design', imageClassName: 'w-[50%] mx-auto pt-2' },
@@ -197,6 +200,20 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { Icon: SiPrometheus, alt: 'Prometheus', subtitleKey: 'prometheusSubtitle', label: 'Prometheus', iconColor: '#E6522C' },
       { Icon: SiGrafana, alt: 'Grafana', subtitleKey: 'grafanaSubtitle', label: 'Grafana', iconColor: '#F46800' },
       { Icon: SiRender, alt: 'Render', subtitleKey: 'renderSubtitle', label: 'Render', iconColor: '#46E3B7' },
+      { Icon: TbPlugConnected, alt: 'Mockito', subtitleKey: 'mockitoSubtitle', label: 'Mockito', iconColor: '#78A641' },
+      { Icon: TbPlugConnected, alt: 'OAuth 2.0', subtitleKey: 'oauth2Subtitle', label: 'OAuth 2.0', iconColor: '#EB5424' },
+      { Icon: TbPlugConnected, alt: 'JWT', subtitleKey: 'jwtSubtitle', label: 'JWT', iconColor: '#D63AFF' },
+      { Icon: TbPlugConnected, alt: 'OWASP', subtitleKey: 'owaspSubtitle', label: 'OWASP', iconColor: '#173B63' },
+      { Icon: TbPlugConnected, alt: 'Clean Code', subtitleKey: 'cleanCodeSubtitle', label: 'Clean Code', iconColor: '#4B5563' },
+      { Icon: TbPlugConnected, alt: 'TDD', subtitleKey: 'tddSubtitle', label: 'TDD', iconColor: '#6B7280' },
+      { Icon: TbPlugConnected, alt: 'CI/CD', subtitleKey: 'cicdSubtitle', label: 'CI/CD', iconColor: '#2563EB' },
+      { Icon: TbPlugConnected, alt: 'SaaS & Multitenancy', subtitleKey: 'saasSubtitle', label: 'SaaS / Multitenancy', iconColor: '#7C3AED' },
+      { Icon: TbPlugConnected, alt: 'Microservices', subtitleKey: 'microservicesSubtitle', label: 'Microservices', iconColor: '#0891B2' },
+      { Icon: TbPlugConnected, alt: 'Serverless', subtitleKey: 'serverlessSubtitle', label: 'Serverless', iconColor: '#F59E0B' },
+      { Icon: TbPlugConnected, alt: 'Scrum & Kanban', subtitleKey: 'agileSubtitle', label: 'Scrum / Kanban', iconColor: '#0F766E' },
+      { Icon: TbPlugConnected, alt: 'Meta API', subtitleKey: 'metaApiSubtitle', label: 'Meta API', iconColor: '#0866FF' },
+      { Icon: TbPlugConnected, alt: 'Payment Gateways', subtitleKey: 'paymentGatewaysSubtitle', label: 'Payment Gateways', iconColor: '#16A34A' },
+      { Icon: TbPlugConnected, alt: 'Webhooks', subtitleKey: 'webhooksSubtitle', label: 'Webhooks', iconColor: '#EA580C' },
     ],
   },
 ]

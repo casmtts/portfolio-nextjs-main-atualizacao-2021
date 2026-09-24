@@ -14,7 +14,7 @@ export default function Skills() {
           <section key={category.titleKey} aria-labelledby={`skill-${category.titleKey}`}>
             <h3 id={`skill-${category.titleKey}`} className="section-subtitle">{t(category.titleKey)}</h3>
             <div className="skill-grid">
-              {category.skills.slice(0, category.titleKey === 'relatedTechTitle' ? 12 : category.titleKey === 'frontEndTitle' ? 8 : 6).map((skill) => (
+              {category.skills.map((skill) => (
                 <SkillIcon key={skill.alt} src={skill.icon} Icon={skill.Icon} alt={skill.alt} title={t(skill.subtitleKey)} label={skill.labelKey ? t(skill.labelKey) : skill.label} iconColor={skill.iconColor} imageClassName={skill.imageClassName} variant={skill.variant} />
               ))}
             </div>
