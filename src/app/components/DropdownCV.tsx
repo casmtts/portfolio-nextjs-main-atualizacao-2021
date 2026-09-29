@@ -58,7 +58,7 @@ export default function Example() {
             {/* Currículo */}
             <MenuItem>
               {({ focus }: any) => (
-                <Link href="https://drive.google.com/file/d/1eAKYOsWAmL_1UetWN0WZnG0uNe7aoovo/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-[var(--ink)] ml-6 hover:font-semibold' >Currículo</h4></Link>
+                <Link href="https://drive.google.com/file/d/1DBOcMduMKG0DCMO76hP2NqJzv1qj-AzE/view?usp=sharing"><h4 className=' sm:pt-[0.5rem] flex flex-row text-[var(--ink)] ml-6 hover:font-semibold' >Currículo</h4></Link>
               )}
             </MenuItem>
           </div>
